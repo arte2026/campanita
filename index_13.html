@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Elementos Quimicos 🔬</h2>
+    </div>
+      <div class="header">
+      <h3>🏅= 10-15 👍= 16-25 👎= 26+</h3>
+          </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <div id="tries">Intentos: 0</div>
+</div>
+  </div>
+    <script>
+     // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards2c1.jpg",
+    answer: "Hidrogeno"
+  },
+  {
+    question: "cards2c2.jpg",
+    answer: "Oxigeno"
+  },
+  {
+    question: "cards2c3.jpg",
+    answer: "Carbon"
+  },
+  {
+    question: "cards2c6.jpg",
+    answer: "Hierro"
+  },
+  {
+    question: "cards2c4.jpg",
+    answer: "Mercurio"
+  },
+    {
+    question: "cards2c5.jpg",
+    answer: "Oro"
+  },
+    {
+    question: "cards2c7.jpg",
+    answer: "Sodio"
+  },
+    {
+    question: "cards2c8.jpg",
+    answer: "Cobre"
+  },
+    {
+    question: "cards2c9.jpg",
+    answer: "Calcio"
+  },
+    {
+    question: "cards2c10.jpg",
+    answer: "Plutonio"
+  },
+    
+];
+    </script>
+    <script src="memory.js"></script>
+</body>
+</html>

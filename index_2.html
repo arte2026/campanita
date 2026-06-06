@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Mosaicos Deslizantes</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header" style="margin-bottom: 20px;">
+      <h2>Mosaicos Deslizantes</h2>
+    </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer" style="border-radius: 6px; margin-bottom: 20px;">
+  <div id="puzzle" class="puzzle"></div>
+</div>
+
+    <!-- Thumbnails -->
+    <div class="thumbnails" style="margin-bottom: 20px;">
+      <div id="thumbs" ></div>
+      
+    </div>
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button class="btnback" id="gobackbtn" onclick="goBack()">Atras</button>
+        
+</div>
+  </div>
+    
+    <script src="puzzle.js"></script>
+</body>
+</html>

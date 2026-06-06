@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+<style>
+.back {
+      --s: 15px; /* control the size*/
+  --c1: darkgreen;
+  --c2: limegreen;
+  
+  --_g: 
+    #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
+    #0000 0 calc(150%/13),var(--c1) 0 calc(200%/13),
+    #0000 0 calc(250%/13),var(--c1) 0 calc(300%/13);
+  --_g0: repeating-linear-gradient( 45deg,var(--_g));
+  --_g1: repeating-linear-gradient(-45deg,var(--_g));
+  background:
+    var(--_g0),var(--_g0) var(--s) var(--s),
+    var(--_g1),var(--_g1) var(--s) var(--s) var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h2>Capitales Europa y Africa 🌍</h2>
+    </div>
+<div class="header">
+    <h3>🏅= 12-18 👍= 19-28 👎= 29+</h3>
+          </div>
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <div id="tries">Intentos: 0</div>
+</div>
+  </div>
+    <script>
+    // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards21.jpg",
+    answer: "El Cairo"
+  },
+  {
+    question: "cards22.jpg",
+    answer: "Pretoria"
+  },
+  {
+    question: "cards23.jpg",
+    answer: "Alger"
+  },
+  {
+    question: "cards26.jpg",
+    answer: "Abuya"
+  },
+  {
+    question: "cards27.jpg",
+    answer: "Nairobi"
+  },
+    {
+    question: "cards41.jpg",
+    answer: "Madrid"
+  },
+    {
+    question: "cards42.jpg",
+    answer: "Paris"
+  },
+    {
+    question: "cards43.jpg",
+    answer: "Berlin"
+  },
+    {
+    question: "cards45.jpg",
+    answer: "Kiev"
+  },
+    {
+    question: "cards46.jpg",
+    answer: "Estocolmo"
+  },
+    {
+    question: "cards47.jpg",
+    answer: "Londres"
+  },
+   {
+    question: "cards48.jpg",
+    answer: "Roma"
+  }, 
+];
+    </script> 
+    <script src="memory.js"></script>
+</body>
+</html>

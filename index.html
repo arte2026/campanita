@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>Juegos Educativos</title>
+
+</head>
+
+<body>
+    <div id="welcomeScreen" class="welcome-screen">
+
+  <div class="welcome-content" >
+
+    <img src="gallery.jpg" id="enterBtn"  alt="Gallery Entrance">
+
+  </div>
+
+</div>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Juegos Educativos 🔔</h2>
+    </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer">
+  <div id="viewerContent" class="art-frame">
+    
+  </div>
+</div>
+
+    <!-- Thumbnails -->
+    <div class="thumbnails" id="thumbnails">
+      <div class="thumbnail"></div>
+      
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+
+  <input type="radio" name="category" id="rock" value="rock" checked>
+  <label for="rock">Geografia</label>
+
+  <input type="radio" name="category" id="hollywood" value="hollywood">
+  <label for="hollywood">Ciencia</label>
+
+  <input type="radio" name="category" id="sports" value="sports">
+  <label for="sports">Historia</label>
+        
+</div>
+
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+  <button id="aboutBtn">Acerca</button>
+   <button id="puzzleBtn">Mosaicos</button>     
+</div>
+
+  </div>
+    
+<script src="script.js"></script>
+    <script>
+loadCategory(document.querySelector('input[name="category"]:checked').value);
+</script>
+    
+</body>
+</html>

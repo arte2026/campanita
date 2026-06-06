@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+<style>
+.back {
+      --s: 15px; /* control the size*/
+  --c1: maroon;
+  --c2: crimson;
+  
+  --_g: 
+    #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
+    #0000 0 calc(150%/13),var(--c1) 0 calc(200%/13),
+    #0000 0 calc(250%/13),var(--c1) 0 calc(300%/13);
+  --_g0: repeating-linear-gradient( 45deg,var(--_g));
+  --_g1: repeating-linear-gradient(-45deg,var(--_g));
+  background:
+    var(--_g0),var(--_g0) var(--s) var(--s),
+    var(--_g1),var(--_g1) var(--s) var(--s) var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Historia de Mexico</h2>
+    </div>
+      <div class="header">
+      <h3>🏅= 10-15 👍= 16-25 👎= 26+</h3>
+          </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <div id="tries">Intentos: 0</div>
+</div>
+  </div>
+    <script>
+     // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards3b1.jpg",
+    answer: "Moctezuma 1466 - 1520"
+  },
+  {
+    question: "cards3b2.jpg",
+    answer: "Sor Juana Ines de la Cruz 1648 - 1695"
+  },
+  {
+    question: "cards3b3.jpg",
+    answer: "Miguel Hidalgo 1753 - 1811"
+  },
+  {
+    question: "cards3b6.jpg",
+    answer: "Emiliano Zapata 1879 - 1919" 
+  },
+  {
+    question: "cards3b4.jpg",
+    answer: "Benito Juarez 1806 - 1872"
+  },
+    {
+    question: "cards3b5.jpg",
+    answer: "Porfirio Diaz 1830 - 1915"
+  },
+    {
+    question: "cards3b7.jpg",
+    answer: "Lazaro Cardenas 1895 - 1970"
+  },
+    {
+    question: "cards3b8.jpg",
+    answer: "Frida Kahlo 1907 - 1954"
+  },
+    {
+    question: "cards3b9.jpg",
+    answer: "Hugo Sanchez 1958-"
+  },
+    {
+    question: "cards3b10.jpg",
+    answer: "Claudia Sheinbaum 1962-"
+  },
+    
+];
+    </script>
+    <script src="memory.js"></script>
+</body>
+</html>

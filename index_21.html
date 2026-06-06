@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+<style>
+.back {
+      --s: 15px; /* control the size*/
+  --c1: darkred;
+  --c2: orangered;
+  
+  --_g: 
+    #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
+    #0000 0 calc(150%/13),var(--c1) 0 calc(200%/13),
+    #0000 0 calc(250%/13),var(--c1) 0 calc(300%/13);
+  --_g0: repeating-linear-gradient( 45deg,var(--_g));
+  --_g1: repeating-linear-gradient(-45deg,var(--_g));
+  background:
+    var(--_g0),var(--_g0) var(--s) var(--s),
+    var(--_g1),var(--_g1) var(--s) var(--s) var(--c2);
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Historia Universal</h2>
+    </div>
+      <div class="header">
+      <h3>🏅= 10-15 👍= 16-25 👎= 26+</h3>
+          </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <div id="tries">Intentos: 0</div>
+</div>
+  </div>
+    <script>
+     // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards3a1.jpg",
+    answer: "Alejandro Magno 356 - 323 a.C."
+  },
+  {
+    question: "cards3a2.jpg",
+    answer: "Julio César 100 - 44 a.C."
+  },
+  {
+    question: "cards3a3.jpg",
+    answer: "Napoleón Bonaparte 1769 - 1821"
+  },
+  {
+    question: "cards3a6.jpg",
+    answer: "Albert Einstein 1879 - 1955" 
+  },
+  {
+    question: "cards3a4.jpg",
+    answer: "Cristobal Colón 1451 - 1506"
+  },
+    {
+    question: "cards3a5.jpg",
+    answer: "Abraham Lincoln 1809 - 1865"
+  },
+    {
+    question: "cards3a7.jpg",
+    answer: "Mahatma Gandhi 1869 - 1948"
+  },
+    {
+    question: "cards3a8.jpg",
+    answer: "Leonardo da Vinci 1452 - 1519"
+  },
+    {
+    question: "cards3a9.jpg",
+    answer: "William Shakespeare 1564 - 1616"
+  },
+    {
+    question: "cards3a11.jpg",
+    answer: "Nelson Mandela 1918 - 2013"
+  },
+    
+];
+    </script>
+    <script src="memory.js"></script>
+</body>
+</html>
