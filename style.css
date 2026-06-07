@@ -47,8 +47,7 @@ align-items: center; /* Vertical centering */
         align-content: center;  
         max-width: 640px; 
     }
-
-    /* Header */
+  /* Header */
     .header {
       background: white;
         color: black;
@@ -72,7 +71,7 @@ align-items: center; /* Vertical centering */
       background: white;
       padding: 1px;
       border-radius: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -82,7 +81,7 @@ align-items: center; /* Vertical centering */
 
     .art-frame {
       width: 100%;
-      height: 55vh;
+      height: 60vh;
       background: white; 
         border-radius: 20px;
       overflow: hidden;
@@ -163,7 +162,7 @@ align-items: center; /* Vertical centering */
       display: flex;
       justify-content: space-between;
       gap: 15px;
-        margin: 0px 5%;  
+        margin: 0px 15%;  
     }
 
     .bottom-buttons button {
@@ -198,6 +197,9 @@ align-items: center; /* Vertical centering */
     font-family: 'Candara', sans-serif;
 }
     
+#gobackbtn{
+      background: linear-gradient(0deg, #00a4db, deepskyblue);
+}
 .info-screen {
   width: 100%;
     height: 100%;
@@ -290,13 +292,6 @@ align-items: center; /* Vertical centering */
     text-align: justify;
 }
 
-.puzzle {
-  width: 100%;
-  height: 57vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-}
 
 .tile {
   background-size: 300% 300%;
@@ -475,20 +470,11 @@ align-items: center; /* Vertical centering */
     border: 1px solid darkgray; 
 }
 
-#gobackbtn{
-   font-size: 3vh;
-      border-radius: 20px;
-      background: linear-gradient(0deg, #00a4db, deepskyblue);
-        box-shadow: 0px 0px 7px #233234;
-    color: black;
-    border: 0 solid #233234;
-}
-
 #tries{
     background: white;
         color: black;
       text-align: center;
-      padding: 3px 20px 9px 20px;
+      padding: 3px 50px 9px 50px;
       font-size: 3vh;
       border-radius: 20px;
         border: 1px solid lightblue;
@@ -496,4 +482,35 @@ align-items: center; /* Vertical centering */
         align-items: center;
         box-shadow: 0px 0px 7px #233234;
     font-family: 'Candara', sans-serif;
+}
+.container2 {
+      width: 100%;
+        height: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      align-items: center;
+        align-content: center;  
+        max-width: 600px; 
+    border-radius: 6px; 
+    margin-bottom: 20px;
+    }
+
+.viewer3 {
+  background: white;
+      padding: 1px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+       border: 1px solid lightblue; 
+        box-shadow: 0px 0px 7px #233234;
+    }
+
+.puzzle {
+  width: 100%;
+  height: 66vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
 }
