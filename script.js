@@ -122,6 +122,13 @@ const artworks = {
       link: "index_12.html",
         info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br>Puntuacion:<br>-Excelente: 8-12 Intentos<br>-Normal: 13-20 Intentos<br>-Reprobado: 21 o mas Intentos"
     },
+      {
+      img: "ana2.jpg",
+      title: "Reino Animal",
+      size: "20 Cartas",
+      link: "index_14.html",
+        info: "Voltea las cartas de las especies del Reino Animal y emparejalas con las cartas de sus respectivos nombres.<br>Puntuacion:<br>-Excelente: 10-15 Intentos<br>-Normal: 16-25 Intentos<br>-Reprobado: 26 o mas Intentos"
+    },
       
   ],
 
