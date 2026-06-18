@@ -31,12 +31,13 @@ aboutBtn.addEventListener("click", () => {
       <h2>Juegos Educativos</h2>
       <h2>Campanita</h2>
       <p> 
-        version 1.3 2026 Guillermo R Monroy
+        version 1.5 2026 Guillermo R Monroy
       </p>
       <p>Donaciones: paypal.me/Guillermo3D</p>
-<p>Mis Apps en Microsoft Store:</p>
+<p>Mis otras Apps en Microsoft Store:</p>
 <p>- SymChess ♞</p>
 <p>- Organillo Virtual 🎵</p>
+<p><br>Tambien Disponibles en Google Play Store</p>
     </div>
   `;
 });
