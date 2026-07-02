@@ -166,7 +166,13 @@ const artworks = {
       link: "index_23.html",
         info: "Voltea las cartas de los avances tecnologicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-12 Intentos<br>-👍 Normal: 13-20 Intentos<br>-❌ Reprobado: 21 o mas Intentos"
     },
-    
+     {
+      img: "hum2.jpg",
+      title: "Memorama - 20 Cartas",
+      size: "INSTRUCCIONES:",
+      link: "index_24.html",
+        info: "Voltea las cartas de los monumentos historicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-14 Intentos<br>-👍 Normal: 15-22 Intentos<br>-❌ Reprobado: 23 o mas Intentos"
+    },
   ],
 };
 
