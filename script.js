@@ -46,7 +46,7 @@ puzzleBtn.addEventListener("click", () => {
     <div class="info-screen">
       <h2>Rompecabezas Deslizantes</h2>
       <h3>Instrucciones:</h3>
-      
+      <h1>⬅ ⬆ ⬇ ⮕ 🌄</h1>
       <p>Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
 <p><br><a class="playbtn" href="index_2.html">Jugar</a>
 </p>
