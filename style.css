@@ -167,7 +167,7 @@ align-items: center; /* Vertical centering */
       display: flex;
       justify-content: space-between;
       gap: 15px;
-        margin: 0px 15%;  
+        margin: 0px 20%;  
     }
 
     .bottom-buttons button {
@@ -227,7 +227,9 @@ align-items: center; /* Vertical centering */
     justify-content: center;
     align-content: center;
 }
-
+.info-screen img{
+	height: 90px;
+}
 /* CARD */
 .card1 {
   width: 100%;

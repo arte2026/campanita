@@ -9,6 +9,9 @@ const puzzleImages = [
   "dino3.jpg",
     "dino5.jpg",
     "dino6.jpg",
+	"dino7.jpg",
+	"dino8.jpg",
+	"dino9.jpg",
     "icon.jpg",
 ];
 
