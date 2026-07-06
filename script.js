@@ -29,7 +29,7 @@ aboutBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
       <img src="geo.png" >
-      <h3>Memorama - 20 Cartas</h3>
+      <h2>Geometria</h2>
 
       <p>Voltea las cartas de las Figuras Geometricas y emparejalas con las cartas de sus nombres.</p>
 
@@ -45,7 +45,7 @@ puzzleBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
 	<img src="rom.png" >
-      <h2>Rompecabezas Deslizantes</h2>
+      <h2>Rompecabezas</h2>
       <h3>Instrucciones:</h3>
       
       <p>Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>

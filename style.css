@@ -8,6 +8,7 @@ justify-content: center; /* Horizontal centering */
 align-items: center; /* Vertical centering */
     font-family: 'Candara', sans-serif;
       background: aliceblue;
+	   text-align: center
 }
 
 .welcome-screen {
@@ -228,7 +229,7 @@ align-items: center; /* Vertical centering */
     align-content: center;
 }
 .info-screen img{
-	height: 90px;
+	height: 120px;
 }
 /* CARD */
 .card1 {
