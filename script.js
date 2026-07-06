@@ -45,10 +45,11 @@ puzzleBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
 	<img src="rom.png" >
-      <h2>Rompecabezas</h2>
-      <h3>Instrucciones:</h3>
+   
+      <h3>Rompecabezas:</h3>
       
-      <p>Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
+      <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
+	  <p>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p>
 <p><br><a class="playbtn" href="index_2.html">Jugar</a>
 </p>
     </div>
