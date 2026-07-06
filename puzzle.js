@@ -1,5 +1,5 @@
 const moveSound = new Audio('move.mp3');
-
+let moveCount = 0;
 let gameWon = false;
 
 const puzzleImages = [
@@ -108,6 +108,8 @@ let tiles = [];
 
 function init() {
     gameWon = false;
+	moveCount = 0;
+  updateMoveCounter();
   tiles = [];
 
   for (let i = 0; i < size * size; i++) {
@@ -163,12 +165,17 @@ function move(index) {
     (col === emptyCol && Math.abs(row - emptyRow) === 1);
 
   if (isAdjacent) {
-    [tiles[index], tiles[emptyIndex]] = [tiles[emptyIndex], tiles[index]];
-    render();
-      if (checkWin()) {
-      setTimeout(showWin, 200);
-    }
+  [tiles[index], tiles[emptyIndex]] = [tiles[emptyIndex], tiles[index]];
+
+  moveCount++;
+  updateMoveCounter();
+
+  render();
+
+  if (checkWin()) {
+    setTimeout(showWin, 200);
   }
+}
 }
 function countInversions(arr) {
   let inversions = 0;
@@ -187,6 +194,14 @@ function countInversions(arr) {
 
   return inversions;
 }
+
+function updateMoveCounter() {
+  const counter = document.getElementById("moveCounter");
+  if (counter) {
+    counter.textContent = `Intentos: ${moveCount}`;
+  }
+}
+
 function showWin() {
   gameWon = true;
 
