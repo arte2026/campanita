@@ -175,6 +175,13 @@ const artworks = {
       link: "index_24.html",
         info: "Voltea las cartas de los monumentos historicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-14 Intentos<br>-👍 Normal: 15-22 Intentos<br>-❌ Reprobado: 23 o mas Intentos"
     },
+	{
+      img: "hum5.jpg",
+      title: "Memorama - 16 Cartas",
+      size: "INSTRUCCIONES:",
+      link: "index_25.html",
+        info: "Voltea las cartas de las Bellas Artes y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-13 Intentos<br>-👍 Normal: 14-21 Intentos<br>-❌ Reprobado: 22 o mas Intentos"
+    },
   ],
 };
 
