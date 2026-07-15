@@ -182,6 +182,13 @@ const artworks = {
       link: "index_25.html",
         info: "Voltea las cartas de las Bellas Artes y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-13 Intentos<br>-👍 Normal: 14-21 Intentos<br>-❌ Reprobado: 22 o mas Intentos"
     },
+	{
+      img: "hum6.jpg",
+      title: "Memorama - 20 Cartas",
+      size: "INSTRUCCIONES:",
+      link: "index_26.html",
+        info: "Voltea las cartas de los Trajes Tipicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-16 Intentos<br>-👍 Normal: 17-24 Intentos<br>-❌ Reprobado: 25 o mas Intentos"
+    },
   ],
 };
 
