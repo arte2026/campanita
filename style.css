@@ -188,7 +188,7 @@ align-items: center; /* Vertical centering */
       display: flex;
       justify-content: space-between;
       gap: 15px;
-        margin: 0px 20%;  
+        margin: 0px 15%;  
     }
 
     .bottom-buttons button {
@@ -520,4 +520,15 @@ align-items: center; /* Vertical centering */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
+}
+#musicBtn{
+    background: linear-gradient(0deg, orangered, tomato);
+}
+
+.play-btn{
+    font-size: 5em;
+    color: darkslateblue;
+    background: aliceblue;
+    border: 3px groove darkslateblue;
+    border-radius: 6px;
 }

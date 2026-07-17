@@ -1,7 +1,7 @@
 const viewer = document.getElementById("viewerContent");
 const aboutBtn = document.getElementById("aboutBtn");
 const puzzleBtn = document.getElementById("puzzleBtn");
-
+const musicBtn = document.getElementById("musicBtn");
 // Default artwork view
 
 function loadArtwork(art) {
@@ -51,6 +51,22 @@ puzzleBtn.addEventListener("click", () => {
       <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
 	  <p>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p>
 <p><br><a class="playbtn" href="index_2.html">Jugar</a>
+</p>
+    </div>
+  `;
+});
+
+// About view
+musicBtn.addEventListener("click", () => {
+  viewer.innerHTML = `
+    <div class="info-screen">
+	<h1>🎷 🎸 🎺 🎻 🎹 🎼</h1>
+   
+      <h3>Instrumentos Musicales:</h3>
+      
+      <p>Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus nombres..</p>
+	  <p>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p>
+<p><br><a class="playbtn" href="index_32.html">Jugar</a>
 </p>
     </div>
   `;
