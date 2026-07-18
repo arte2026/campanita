@@ -59,7 +59,7 @@ function init() {
     if (item.type === 'audio') {
       card.innerHTML = `
         <div class="front audio-card">
-        <button class="play-btn">▶</button>
+        <button class="play-btn">🎶</button>
     </div>
         <div class="back"></div>
       `;

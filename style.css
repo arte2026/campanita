@@ -526,9 +526,10 @@ align-items: center; /* Vertical centering */
 }
 
 .play-btn{
-    font-size: 5em;
+    font-size: 4em;
     color: darkslateblue;
     background: aliceblue;
     border: 3px groove darkslateblue;
     border-radius: 6px;
+    margin-top: 20px;
 }
