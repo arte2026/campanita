@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Magnitudes Fisicas 📐</h2>
+    </div>
+<div class="header">
+      <h3>🏅= 10-15 👍= 16-25 ❌= 26+</h3>
+          </div>
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <div id="tries">Intentos: 0</div>
+</div>
+  </div>
+    <script>
+     // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards2e1.jpg",
+    answer: "Masa"
+  },
+  {
+    question: "cards2e2.jpg",
+    answer: "Distancia"
+  },
+  {
+    question: "cards2e3.jpg",
+    answer: "Tiempo"
+  },
+  {
+    question: "cards2e6.jpg",
+    answer: "Velocidad"
+  },
+  {
+    question: "cards2e4.jpg",
+    answer: "Temperatura"
+  },
+    {
+    question: "cards2e5.jpg",
+    answer: "Volumen"
+  },
+    {
+    question: "cards2e7.jpg",
+    answer: "Area"
+  },
+    {
+    question: "cards2e8.jpg",
+    answer: "Fuerza"
+  },
+  {
+    question: "cards2e9.jpg",
+    answer: "Corriente Electrica"
+  },
+    {
+    question: "cards2e10.jpg",
+    answer: "Intensidad Luminosa"
+  },
+];
+    </script>
+    <script src="memory.js"></script>
+</body>
+</html>

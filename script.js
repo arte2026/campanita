@@ -159,7 +159,13 @@ const artworks = {
       link: "index_14.html",
         info: "Voltea las cartas de las especies del Reino Animal y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
     },
-      
+      {
+      img: "ana5.jpg",
+      title: "Memorama - 20 Cartas",
+      size: "INSTRUCCIONES:",
+      link: "index_15.html",
+        info: "Voltea las cartas de las Magnitudes Fisicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+    },
   ],
 
   sports: [
