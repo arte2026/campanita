@@ -517,8 +517,8 @@ align-items: center; /* Vertical centering */
     font-family: 'Candara', sans-serif;
 }
 .puzzle {
-  width: 83%;
-  height: 66vh;
+  width: 560px;
+  height: 72vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
