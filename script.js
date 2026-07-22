@@ -28,10 +28,10 @@ function loadArtwork(art) {
 aboutBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
-      <img src="geo.png" >
-      <h2>Geometria</h2>
+      <h1>📏 📐 📏 📐</h1>
+      <h2>Figuras Geometricas 3D</h2>
 
-      <p>Voltea las cartas de las Figuras Geometricas y emparejalas con las cartas de sus nombres.</p>
+      <p>Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus nombres.</p>
 
 <p>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p>
 <p><br><a class="playbtn" href="index_31.html">Jugar</a>
@@ -44,9 +44,9 @@ aboutBtn.addEventListener("click", () => {
 puzzleBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
-	<img src="rom.png" >
-   
-      <h3>Rompecabezas:</h3>
+	
+    <h1>🧩 🧩 🧩 🧩</h1>
+      <h2>Rompecabezas</h2>
       
       <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
 	  <p>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p>
@@ -60,9 +60,9 @@ puzzleBtn.addEventListener("click", () => {
 musicBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
-	<h1>🎷 🎸 🎺 🎻 🎹 🎼</h1>
+	<h1>🎷 🎸 🎺 🎻 🎹 🥁</h1>
    
-      <h3>Instrumentos Musicales:</h3>
+      <h2>Instrumentos Musicales</h2>
       
       <p>Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus nombres..</p>
 	  <p>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p>
