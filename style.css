@@ -178,7 +178,7 @@ align-items: center; /* Vertical centering */
       display: flex;
       justify-content: space-between;
       gap: 15px;
-        margin: 0px 15%;  
+        margin: 0px 15px;  
     }
 
     .bottom-buttons button {
@@ -494,7 +494,7 @@ align-items: center; /* Vertical centering */
     background: white;
         color: black;
       text-align: center;
-      padding: 3px 50px 9px 50px;
+      padding: 3px 30px 9px 30px;
       font-size: 3vh;
       border-radius: 20px;
         border: 1px solid lightblue;
@@ -503,7 +503,19 @@ align-items: center; /* Vertical centering */
         box-shadow: 0px 0px 7px #233234;
     font-family: 'Candara', sans-serif;
 }
-
+.score{
+    background: white;
+        color: black;
+      text-align: center;
+      padding: 3px 10px 9px 10px;
+      font-size: 1.5em;
+      border-radius: 20px;
+        border: 1px solid lightblue;
+        height: 3vh;
+        align-items: center;
+        box-shadow: 0px 0px 7px #233234;
+    font-family: 'Candara', sans-serif;
+}
 .puzzle {
   width: 83%;
   height: 66vh;
