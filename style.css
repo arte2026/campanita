@@ -46,7 +46,7 @@ align-items: center; /* Vertical centering */
       box-sizing: border-box;
       align-items: center;
         align-content: center;  
-        max-width: 720px; 
+        width: 900px;
     }
   /* Header */
     .header {
@@ -91,7 +91,7 @@ align-items: center; /* Vertical centering */
 
     .art-frame {
       width: 100%;
-      height: 44vh;
+      height: 400px;
      
   background: white;
         border-radius: 20px;
@@ -112,7 +112,7 @@ align-items: center; /* Vertical centering */
       background: snow;
       padding: 6px 10px;
       border-radius: 9px;
-      margin-bottom: 13px;
+      margin-bottom: 18px;
       overflow-x: auto;
       white-space: nowrap;
         border: 1px solid lightblue; 
@@ -125,11 +125,11 @@ align-items: center; /* Vertical centering */
     grid-auto-flow: column;
     }
     .thumbnail {
-      height: 13vh;
+      height: 100px;
         max-width: 90px;
       display: inline-block;
         object-fit: contain;
-      margin-right: 12px;
+      margin-right: 25px;
       cursor: pointer;
   transition: 0.2s;
     }
@@ -155,7 +155,6 @@ align-items: center; /* Vertical centering */
 .categories label {
   flex: 1;
   text-align: center;
-    
   padding: 7px 5px;
     font-size: 2.5vh;
   background: #EEEEEE;
@@ -409,16 +408,15 @@ align-items: center; /* Vertical centering */
       align-items: center;
        border: 1px solid lightblue; 
         box-shadow: 0px 0px 7px #233234;
-        min-height: 70vh;
-        margin-bottom: 20px;
+        min-height: 75vh;
+        margin-bottom: 15px;
     }
 
 .grid {
-      width: 90vw;
-      max-width: 680px;
+      width: 870px;
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 4px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 3px 5px;
     }
 
  .card {
@@ -494,7 +492,7 @@ align-items: center; /* Vertical centering */
     background: white;
         color: black;
       text-align: center;
-      padding: 3px 30px 9px 30px;
+      padding: 3px 40px 9px 40px;
       font-size: 3vh;
       border-radius: 20px;
         border: 1px solid lightblue;
@@ -507,7 +505,7 @@ align-items: center; /* Vertical centering */
     background: white;
         color: black;
       text-align: center;
-      padding: 3px 10px 9px 10px;
+      padding: 3px 40px 9px 40px;
       font-size: 1.5em;
       border-radius: 20px;
         border: 1px solid lightblue;
@@ -517,8 +515,8 @@ align-items: center; /* Vertical centering */
     font-family: 'Candara', sans-serif;
 }
 .puzzle {
-  width: 560px;
-  height: 72vh;
+  width: 500px;
+  height: 540px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
