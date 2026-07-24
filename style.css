@@ -526,8 +526,8 @@ a {
     font-family: 'Candara', sans-serif;
 }
 .puzzle {
-  width: 500px;
-  height: 540px;
+  width: 535px;
+  height: 535px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
