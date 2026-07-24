@@ -10,7 +10,18 @@ align-items: center; /* Vertical centering */
       background: aliceblue;
 	   text-align: center
 }
-
+body,
+button,
+input,
+label,
+img,
+div,
+span,
+select,
+textarea,
+a {
+    cursor: url("Aero.png"), auto !important;
+}
 .welcome-screen {
     width: 100%;
     height: 100%;
