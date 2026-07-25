@@ -140,17 +140,17 @@ const artworks = {
     
     {
       img: "anat3.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Memorama - 22 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_13.html",
-        info: "Voltea las cartas de los Elementos Quimicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de los Elementos Quimicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 11-16 Intentos<br>-👍 Normal: 17-26 Intentos<br>-❌ Reprobado: 27 o mas Intentos"
     },
       {
       img: "ana4.jpg",
-      title: "Memorama - 16 Cartas",
+      title: "Memorama - 18 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_12.html",
-        info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-12 Intentos<br>-👍 Normal: 13-20 Intentos<br>-❌ Reprobado: 21 o mas Intentos"
+        info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 9-14 Intentos<br>-👍 Normal: 15-22 Intentos<br>-❌ Reprobado: 23 o mas Intentos"
     },
       {
       img: "ana2.jpg",
