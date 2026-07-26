@@ -34,7 +34,7 @@ span,
 select,
 textarea,
 a {
-    cursor: url("Aero.png"), auto !important;
+    cursor: url("Aero.png") 20 1, auto !important;
 }
 .welcome-screen {
     width: 100%;
@@ -104,11 +104,9 @@ a {
     conic-gradient(from 90deg at 1px 1px,var(--_g)),
     var(--c2);
   background-size: var(--s) var(--s), calc(var(--s)/5) calc(var(--s)/5);
-      padding: 1px;
       border-radius: 20px;
       margin-bottom: 20px;
       display: flex;
-      justify-content: center;
       align-items: center;
        border: 1px solid lightblue; 
         box-shadow: 0px 0px 7px #233234;
@@ -355,11 +353,10 @@ a {
 }
 
 .thumb {
-    height: 90px;
-    max-width: 90px;
+    height: 99px;
+    max-width: 99px;
     object-fit: contain;
-    margin-right: 12px;
-    margin-top: 8px;
+    margin-top: 9px;
   transition: 0.3s;
 }
 
@@ -548,8 +545,8 @@ a {
     font-family: 'Candara', sans-serif;
 }
 .puzzle {
-  width: 530px;
-  height: 530px;
+  width: 600px;
+  height: 600px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
@@ -565,4 +562,58 @@ a {
     border: 3px groove darkslateblue;
     border-radius: 6px;
     margin-top: 20px;
+}
+ .thumbnails2 {
+      background: snow;
+     height: 600px;
+     width: 150px;
+      padding: 10px;
+      border-radius: 20px;
+      margin-right: 55px;
+      overflow-y: auto;
+    }
+
+/* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
+* {
+  scrollbar-width: 20px;
+  scrollbar-color: #a9c4e5 #f8fafc;
+}
+
+/* Legacy WebKit — older Chrome/Edge/Safari, radius, borders & shadows */
+*::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #f8fafc;
+  border-radius: 2px;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #f1f5f9;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #e2e8f0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a9c4e5;
+  border-radius: 10px;
+  min-height: 40px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #64748b;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
 }
