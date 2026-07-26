@@ -33,9 +33,8 @@ aboutBtn.addEventListener("click", () => {
 
       <p>Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus nombres.</p>
 
-<p>Puntuacion:<br>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p>
-<p><br><a class="playbtn" href="index_31.html">Jugar</a>
-</p>
+<p>Puntuacion:<br>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p><br>
+<a class="playbtn" href="index_31.html">Jugar</a>
     </div>
   `;
 });
@@ -49,9 +48,9 @@ puzzleBtn.addEventListener("click", () => {
       <h2>Rompecabezas</h2>
       
       <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
-	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p>
-<p><br><a class="playbtn" href="index_2.html">Jugar</a>
-</p>
+	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p><br>
+<a class="playbtn" href="index_2.html">Jugar</a>
+
     </div>
   `;
 });
@@ -65,9 +64,8 @@ musicBtn.addEventListener("click", () => {
       <h2>Instrumentos Musicales</h2>
       
       <p>Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus nombres..</p>
-	  <p>Puntuacion:<br>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p>
-<p><br><a class="playbtn" href="index_32.html">Jugar</a>
-</p>
+	  <p>Puntuacion:<br>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p><br>
+<a class="playbtn" href="index_32.html">Jugar</a>
     </div>
   `;
 });

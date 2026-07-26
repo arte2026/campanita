@@ -210,7 +210,7 @@ function showWin() {
 
   overlay.innerHTML = `
     <div class="win-box">
-      <h1>🏆 Completado</h1>
+      <h1>🎉 Completado!</h1>
       <button onclick="restartPuzzle()">Reiniciar</button>
       <button onclick="goBack()">Atras</button>
     </div>
