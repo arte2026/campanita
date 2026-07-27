@@ -4,43 +4,81 @@ let gameWon = false;
 
 const puzzleImages = [
   
-  "dino1.jpg",
-  "dino2.jpg",
-  "dino3.jpg",
-    "dino4.jpg",
-    "dino5.jpg",
-    "dino6.jpg",
-	 "dino7.jpg",
-	  "dino8.jpg",
-	   "dino9.jpg",
-	   "dino10.jpg",
-    "icon.jpg",
+ {
+    image:"dino1.jpg",
+    description:"Un herbívoro gigante de cuello largo que se alimentaba de las copas de los árboles durante el Jurásico Superior."
+},
+
+{
+    image:"dino2.jpg",
+    description:"Un enorme depredador con mandíbulas poderosas que dominó Norteamérica durante el Cretácico Superior."
+},
+
+{
+    image:"dino3.jpg",
+    description:"Un depredador pequeño y veloz con garras afiladas y una agilidad de caza excepcional."
+},
+    {
+    image:"dino4.jpg",
+    description:"Un dinosaurio herbívoro con grandes placas dorsales y una cola con púas para defenderse."
+},
+    {
+    image:"dino5.jpg",
+    description:"Un herbívoro acorazado con una cola pesada en forma de maza para defenderse de los depredadores."
+},
+    {
+    image:"dino6.jpg",
+    description:"Un herbívoro de tres cuernos con una gran armadura para defenderse y exhibirse."
+},
+    {
+    image:"dino7.jpg",
+    description:"Un reptil marino gigante que dominaba los océanos antiguos con mandíbulas poderosas y una gran velocidad al nadar."
+},
+    {
+    image:"dino8.jpg",
+    description:"Un reptil volador que surcaba los cielos de los paisajes prehistóricos, cazando peces y pequeños animales."
+},
+    {
+    image:"dino9.jpg",
+    description:"Poderoso depredador de la Edad de Hielo, famoso por sus largos y curvos colmillos."
+},
+    {
+    image:"dino10.jpg",
+    description:"Un elefante de la Edad de Hielo con largos colmillos y un pelaje grueso adaptado a los climas fríos."
+},
 ];
 
 function renderThumbnails() {
   const thumbs = document.getElementById("thumbs");
   thumbs.innerHTML = "";
 
-  puzzleImages.forEach((src, index) => {
+  puzzleImages.forEach((puzzle,index)=>{
+
     const img = document.createElement("img");
-    img.src = src;
+
+    img.src = puzzle.image;
+
     img.className = "thumb";
 
-    img.addEventListener("click", () => {
-      selectImage(src, img);
+    img.addEventListener("click",()=>{
+
+        selectImage(puzzle,img);
+
     });
 
     thumbs.appendChild(img);
   });
 }
 
-function selectImage(src, element) {
+function selectImage(puzzle, element){
   // Highlight selected
   document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active"));
   element.classList.add("active");
 
   // Update puzzle image
-  currentImage = src;
+  currentImage = puzzle.image;
+    document.getElementById("infoText").textContent =
+    puzzle.description;
 
   // Restart puzzle
   init();

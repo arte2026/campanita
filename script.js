@@ -28,21 +28,6 @@ function loadArtwork(art) {
 aboutBtn.addEventListener("click", () => {
   viewer.innerHTML = `
     <div class="info-screen">
-      <h1>📏 📐 📏 📐</h1>
-      <h2>Figuras Geometricas 3D</h2>
-
-      <p>Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus nombres.</p>
-
-<p>Puntuacion:<br>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p><br>
-<a class="playbtn" href="index_31.html">Jugar</a>
-    </div>
-  `;
-});
-
-// About view
-puzzleBtn.addEventListener("click", () => {
-  viewer.innerHTML = `
-    <div class="info-screen">
 	
     <h1>🧩 🧩 🧩 🧩</h1>
       <h2>Rompecabezas</h2>
@@ -51,21 +36,6 @@ puzzleBtn.addEventListener("click", () => {
 	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p><br>
 <a class="playbtn" href="index_2.html">Jugar</a>
 
-    </div>
-  `;
-});
-
-// About view
-musicBtn.addEventListener("click", () => {
-  viewer.innerHTML = `
-    <div class="info-screen">
-	<h1>🎷 🎸 🎺 🎻 🎹 🥁</h1>
-   
-      <h2>Instrumentos Musicales</h2>
-      
-      <p>Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus nombres..</p>
-	  <p>Puntuacion:<br>🏅 Excelente: 10-15 Intentos<br> 👍 Normal: 16-25 Intentos<br> ❌ Reprobado: 26 o mas Intentos</p><br>
-<a class="playbtn" href="index_32.html">Jugar</a>
     </div>
   `;
 });
@@ -164,6 +134,13 @@ const artworks = {
       link: "index_15.html",
         info: "Voltea las cartas de las Magnitudes Fisicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
     },
+       {
+      img: "anat6.jpg",
+      title: "Memorama - 20 Cartas",
+      size: "INSTRUCCIONES:",
+      link: "index_31.html",
+        info: "Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+    },
   ],
 
   sports: [
@@ -208,6 +185,13 @@ const artworks = {
       size: "INSTRUCCIONES:",
       link: "index_26.html",
         info: "Voltea las cartas de los Trajes Tipicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-16 Intentos<br>-👍 Normal: 17-24 Intentos<br>-❌ Reprobado: 25 o mas Intentos"
+    },
+      {
+      img: "hum7.jpg",
+      title: "Memorama - 20 Cartas",
+      size: "INSTRUCCIONES:",
+      link: "index_32.html",
+        info: "Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-16 Intentos<br>-👍 Normal: 17-24 Intentos<br>-❌ Reprobado: 25 o mas Intentos"
     },
   ],
 };
