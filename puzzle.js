@@ -6,45 +6,45 @@ const puzzleImages = [
   
  {
     image:"dino1.jpg",
-    description:"Un herbívoro gigante de cuello largo que se alimentaba de las copas de los árboles durante el Jurásico Superior."
+    description:"Herbívoro imponente de cuello largo que se alimentaba del follaje de las copas de los árboles, vegetación alta inaccesible para otras especies. De movimientos lentos, sus extremidades delanteras eran más largas que las traseras, lo que le daba una espalda inclinada."
 },
 
 {
     image:"dino2.jpg",
-    description:"Un enorme depredador con mandíbulas poderosas que dominó Norteamérica durante el Cretácico Superior."
+    description:"Depredador con mandíbulas enormes capaces de triturar huesos y poderosos músculos en el cuello; sus agudos sentidos le ayudaban a detectar presas. Sus enormes extremidades traseras le permitían alcanzar grandes velocidades, mientras que sus pequeños brazos eran vestigiales."
 },
 
 {
     image:"dino3.jpg",
-    description:"Un depredador pequeño y veloz con garras afiladas y una agilidad de caza excepcional."
+    description:"Un depredador pequeño y veloz con garras afiladas y una agilidad de caza excepcional. Equipado con una garra en forma de hoz en cada pata y dientes afilados, utilizaba la velocidad, la coordinación y la astucia para capturar presas en manada."
 },
     {
     image:"dino4.jpg",
-    description:"Un dinosaurio herbívoro con grandes placas dorsales y una cola con púas para defenderse."
+    description:"Herbívoro acorazado con una distintiva doble hilera de grandes placas óseas a lo largo de su lomo y una cola con púas que utilizaba para defenderse. De movimientos lentos y baja estatura, pastaba en vegetación baja y dependía de su armadura para protegerse."
 },
     {
     image:"dino5.jpg",
-    description:"Un herbívoro acorazado con una cola pesada en forma de maza para defenderse de los depredadores."
+    description:"Herbívoro fuertemente acorazado y de baja estatura, cubierto de placas y nódulos óseos; su enorme cola con forma de maza asestaba poderosos golpes a los depredadores. De cuerpo robusto, se alimentaba de plantas bajas y dependía de su armadura para sobrevivir."
 },
     {
     image:"dino6.jpg",
-    description:"Un herbívoro de tres cuernos con una gran armadura para defenderse y exhibirse."
+    description:"Gran herbívoro de tres cuernos con un cráneo macizo y una amplia gola; los cuernos se utilizaban para la defensa y el combate entre individuos de la misma especie. Pastaba en vegetación baja y participaba en exhibiciones sociales durante la época de apareamiento."
 },
     {
     image:"dino7.jpg",
-    description:"Un reptil marino gigante que dominaba los océanos antiguos con mandíbulas poderosas y una gran velocidad al nadar."
+    description:"Gran reptil marino con extremidades en forma de remo y una cola poderosa. Un superdepredador oceánico que cazaba peces y otros reptiles marinos. Su cuerpo aerodinámico le permitía realizar persecuciones rápidas y ataques de emboscada con eficacia en alta mar."
 },
     {
     image:"dino8.jpg",
-    description:"Un reptil volador que surcaba los cielos de los paisajes prehistóricos, cazando peces y pequeños animales."
+    description:"Pterosaurio alado con alas membranosas extendidas entre dedos alargados y el cuerpo; su esqueleto ligero y sus huesos huecos le permitían un vuelo eficiente. Se alimentaban de peces o animales pequeños, sobrevolando costas y rios con elegante agilidad."
 },
     {
     image:"dino9.jpg",
-    description:"Poderoso depredador de la Edad de Hielo, famoso por sus largos y curvos colmillos."
+    description:"Depredador robusto y musculoso con caninos superiores alargados. Especialista en emboscadas, dependía del sigilo y la fuerza. La caza social y el comportamiento cooperativo probablemente contribuyeron a abatir grandes presas con el tiempo."
 },
     {
     image:"dino10.jpg",
-    description:"Un elefante de la Edad de Hielo con largos colmillos y un pelaje grueso adaptado a los climas fríos."
+    description:"Pariente del elefante, con largos colmillos curvos y pelaje grueso, adaptado a los fríos ambientes de la Edad de Hielo; se alimentaba de hierbas, arbustos y plantas leñosas. Las migraciones estacionales y la caza humana moldearon sus poblaciones a lo largo de milenios."
 },
 ];
 
