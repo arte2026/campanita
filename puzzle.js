@@ -6,45 +6,45 @@ const puzzleImages = [
   
  {
     image:"dino1.jpg",
-    description:"Herbívoro imponente de cuello largo que se alimentaba del follaje de las copas de los árboles, vegetación alta inaccesible para otras especies. De movimientos lentos, sus extremidades delanteras eran más largas que las traseras, lo que le daba una espalda inclinada."
+    description:"Herbívoro imponente de cuello largo que se alimentaba del follaje de las copas de los árboles. De movimientos lentos, sus extremidades delanteras eran más largas que las traseras, lo que le daba una espalda inclinada."
 },
 
 {
     image:"dino2.jpg",
-    description:"Depredador con mandíbulas enormes capaces de triturar huesos y poderosos músculos en el cuello; sus agudos sentidos le ayudaban a detectar presas. Sus enormes extremidades traseras le permitían alcanzar grandes velocidades, mientras que sus pequeños brazos eran vestigiales."
+    description:"Depredador con poderosos músculos y mandíbulas capaces de triturar huesos; sus agudos sentidos le ayudaban a detectar presas. Sus enormes patas traseras le permitían alcanzar grandes velocidades, pero sus pequeños brazos eran vestigiales."
 },
 
 {
     image:"dino3.jpg",
-    description:"Un depredador pequeño y veloz con garras afiladas y una agilidad de caza excepcional. Equipado con una garra en forma de hoz en cada pata y dientes afilados, utilizaba la velocidad, la coordinación y la astucia para capturar presas en manada."
+    description:"Un depredador pequeño y veloz con garras afiladas y una agilidad de caza excepcional. Equipado con garras en forma de hoz y dientes afilados, utilizaba la velocidad, la coordinación y la astucia para capturar presas en manada."
 },
     {
     image:"dino4.jpg",
-    description:"Herbívoro acorazado con una distintiva doble hilera de grandes placas óseas a lo largo de su lomo y una cola con púas que utilizaba para defenderse. De movimientos lentos y baja estatura, pastaba en vegetación baja y dependía de su armadura para protegerse."
+    description:"Herbívoro acorazado con una distintiva hilera de placas óseas sobre su lomo y una cola con púas que utilizaba para defenderse. De movimientos lentos y baja estatura, pastaba en vegetación baja y dependía de su armadura para protegerse."
 },
     {
     image:"dino5.jpg",
-    description:"Herbívoro fuertemente acorazado y de baja estatura, cubierto de placas y nódulos óseos; su enorme cola con forma de maza asestaba poderosos golpes a los depredadores. De cuerpo robusto, se alimentaba de plantas bajas y dependía de su armadura para sobrevivir."
+    description:"Herbívoro de cuerpo robusto, fuertemente acorazado y de baja estatura, cubierto de placas y nódulos óseos; su enorme cola con forma de maza asestaba poderosos golpes a los depredadores."
 },
     {
     image:"dino6.jpg",
-    description:"Gran herbívoro de tres cuernos con un cráneo macizo y una amplia gola; los cuernos se utilizaban para la defensa y el combate entre individuos de la misma especie. Pastaba en vegetación baja y participaba en exhibiciones sociales durante la época de apareamiento."
+    description:"Gran herbívoro de tres cuernos con un cráneo macizo y una amplia gola; los cuernos se utilizaban para la defensa y el combate entre individuos de la misma especie. Participaba en exhibiciones sociales durante la época de apareamiento."
 },
     {
     image:"dino7.jpg",
-    description:"Gran reptil marino con extremidades en forma de remo y una cola poderosa. Un superdepredador oceánico que cazaba peces y otros reptiles marinos. Su cuerpo aerodinámico le permitía realizar persecuciones rápidas y ataques de emboscada con eficacia en alta mar."
+    description:"Gran reptil marino con extremidades en forma de remo y una cola poderosa. Un depredador oceánico que cazaba peces y otros reptiles marinos. Su cuerpo aerodinámico le permitía realizar persecuciones rápidas y emboscadas."
 },
     {
     image:"dino8.jpg",
-    description:"Pterosaurio alado con alas membranosas extendidas entre dedos alargados y el cuerpo; su esqueleto ligero y sus huesos huecos le permitían un vuelo eficiente. Se alimentaban de peces o animales pequeños, sobrevolando costas y rios con elegante agilidad."
+    description:"Pterosaurio alado con alas membranosas extendidas entre sus largos dedos y el cuerpo; su esqueleto ligero le permitía un vuelo eficiente. Se alimentaban de peces o animales pequeños, sobrevolando costas y rios con gran agilidad."
 },
     {
     image:"dino9.jpg",
-    description:"Depredador robusto y musculoso con caninos superiores alargados. Especialista en emboscadas, dependía del sigilo y la fuerza. La caza social y el comportamiento cooperativo probablemente contribuyeron a abatir grandes presas con el tiempo."
+    description:"Depredador robusto y musculoso con caninos superiores alargados. Especialista en emboscadas, dependía del sigilo y la fuerza. La caza en grupo probablemente contribuyeron a abatir grandes presas con el tiempo."
 },
     {
     image:"dino10.jpg",
-    description:"Pariente del elefante, con largos colmillos curvos y pelaje grueso, adaptado a los fríos ambientes de la Edad de Hielo; se alimentaba de hierbas, arbustos y plantas leñosas. Las migraciones estacionales y la caza humana moldearon sus poblaciones a lo largo de milenios."
+    description:"Pariente del elefante, con largos colmillos curvos y pelaje grueso, adaptado al frío de la Edad de Hielo; se alimentaba de hierbas, arbustos y plantas leñosas. El cambio climatico y la caza humana causaron su extincion a lo largo de milenios."
 },
 ];
 

@@ -588,17 +588,18 @@ a {
    transform: scale(1.05)
 }
 
-#infoPanel{
+#infoPanel {
     background: white;
-        color: black;
-      text-align: center;
       margin-bottom: 15px;
       border-radius: 15px;
         border: 1px solid lightblue;
-        align-items: center;
         box-shadow: 0px 0px 7px #233234;
 }
-
+#infoPanel p{
+    color: black;
+      text-align: center;
+    margin: 5px 1px;
+}
 
 /* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
 * {
