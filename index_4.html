@@ -48,7 +48,7 @@
         <button id="gobackbtn" onclick="goBack()">⨞</button>
         <div id="tries">Intentos: 0</div>
          <div class="score">
-      🏅: 12-18 👍: 19-28 ❌: 29+
+      Puntaje:  🥇: -26 🥈: -40 🥉: 41+
           </div>
 </div>
   </div>
@@ -106,5 +106,28 @@ const pairs = [
 ];
     </script> 
     <script type="text/javascript" src="memory.js"></script>
+    <script>
+    function getMedal(tries) {
+
+    if (tries <= 26) {
+        return {
+            icon: "🥇",
+        };
+    }
+
+    if (tries <= 40) {
+        return {
+            icon: "🥈",
+            
+        };
+    }
+
+    return {
+        icon: "🥉",
+        
+    };
+
+}
+    </script>
 </body>
 </html>

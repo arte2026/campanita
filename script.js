@@ -15,7 +15,7 @@ function loadArtwork(art) {
       <div class="back1">
         <h2>${art.title}</h2>
         <h3>${art.size}</h3>
-        <p>${art.info}</p>
+        <h3>${art.info}</h3>
         <a href="${art.link}" class="playbtn">Jugar</a>
       </div>
     </div>
@@ -33,7 +33,7 @@ aboutBtn.addEventListener("click", () => {
       <h2>Rompecabezas</h2>
       
       <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
-	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 👍 Normal: 51-99 Intentos<br> ❌ Reprobado: 100 o mas Intentos</p><br>
+	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 🥈 Normal: 51-99 Intentos<br> 🥉 Insuficiente: 100 o mas Intentos</p><br>
 <a class="playbtn" href="index_2.html">Jugar</a>
 
     </div>
@@ -45,54 +45,54 @@ const artworks = {
   rock: [
     {
       img: "geo1.jpg",
-      title: "Memorama - 24 Cartas",
+      title: "Capitales de America - 24 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_3.html",
-        info: "Voltea las cartas de los paises de America y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br>-🏅 Excelente: 12-18 Intentos<br>-👍 Normal: 19-28 Intentos<br>-❌ Reprobado: 29 o mas Intentos"
+        info: "Voltea las cartas de los paises de America y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 26 Intentos  🥈 Normal: - 40 Intentos  🥉 Insuficiente: 41 + Intentos"
     },
     {
       img: "geo2.jpg",
-      title: "Memorama - 24 Cartas",
+      title: "Capitales de Europa y Africa - 24 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_4.html",
-        info: "Voltea las cartas de los paises de Europa y Africa y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br>-🏅 Excelente: 12-18 Intentos<br>-👍 Normal: 19-28 Intentos<br>-❌ Reprobado: 29 o mas Intentos"
+        info: "Voltea las cartas de los paises de Europa y Africa y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 26 Intentos  🥈 Normal: - 40 Intentos  🥉 Insuficiente: 41 + Intentos"
     },
       {
       img: "geo3.jpg",
-      title: "Memorama - 22 Cartas",
+      title: "Capitales de Asia y Oceania - 22 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_5.html",
-        info: "Voltea las cartas de los paises de Asia y Oceania y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br>-🏅 Excelente: 12-17 Intentos<br>-👍 Normal: 18-27 Intentos<br>-❌ Reprobado: 28 o mas Intentos"
+        info: "Voltea las cartas de los paises de Asia y Oceania y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
     },
       
       {
       img: "geo11.jpg",
-      title: "Memorama - 22 Cartas",
+      title: "Capitales de Mexico #1 - 22 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_6.html",
-        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br>-🏅 Excelente: 12-17 Intentos<br>-👍 Normal: 18-27 Intentos<br>-❌ Reprobado: 28 o mas Intentos"
+        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
     },
       
       {
       img: "geo12.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Capitales de Mexico #2 - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_7.html",
-        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "geo13.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Capitales de Mexico #3 - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_8.html",
-        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "geo21.jpg",
-      title: "Memorama - 16 Cartas",
+      title: "Biomas y Climas - 16 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_9.html",
-        info: "Voltea las cartas de los Biomas y Climas del mundo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-12 Intentos<br>-👍 Normal: 13-20 Intentos<br>-❌ Reprobado: 21 o mas Intentos"
+        info: "Voltea las cartas de los Biomas y Climas del mundo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos 🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
       
   ],
@@ -100,98 +100,98 @@ const artworks = {
   hollywood: [
     {
       img: "ana1.jpg",
-      title: "Memorama - 16 Cartas",
+      title: "Planetas del Sistema Solar - 16 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_11.html",
-        info: "Voltea las cartas de los Planetas del Sistema Solar y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-12 Intentos<br>-👍 Normal: 13-20 Intentos<br>-❌ Reprobado: 21 o mas Intentos"
+        info: "Voltea las cartas de los Planetas del Sistema Solar y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos  🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
     
     {
       img: "anat3.jpg",
-      title: "Memorama - 22 Cartas",
+      title: "Elementos Quimicos - 22 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_13.html",
-        info: "Voltea las cartas de los Elementos Quimicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 11-16 Intentos<br>-👍 Normal: 17-26 Intentos<br>-❌ Reprobado: 27 o mas Intentos"
+        info: "Voltea las cartas de los Elementos Quimicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
     },
       {
       img: "ana4.jpg",
-      title: "Memorama - 18 Cartas",
+      title: "Organos del Cuerpo Humano - 18 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_12.html",
-        info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 9-14 Intentos<br>-👍 Normal: 15-22 Intentos<br>-❌ Reprobado: 23 o mas Intentos"
+        info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -17 Intentos 🥈 Normal: -25 Intentos 🥉 Insuficiente: 26 o mas Intentos"
     },
       {
       img: "ana2.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Reino Animal  - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_14.html",
-        info: "Voltea las cartas de las especies del Reino Animal y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de las especies del Reino Animal y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "ana5.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Magnitudes Fisicas - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_15.html",
-        info: "Voltea las cartas de las Magnitudes Fisicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de las Magnitudes Fisicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
        {
       img: "anat6.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Figuras Geometricas 3D - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_31.html",
-        info: "Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
   ],
 
   sports: [
     {
       img: "hum1.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Figuras Historicas - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_21.html",
-        info: "Voltea las cartas de las Figuras Historicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de las Figuras Historicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
      {
       img: "hum4.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Figuras Historicas de Mexico - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_22.html",
-        info: "Voltea las cartas de las figuras historicas de Mexico y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-15 Intentos<br>-👍 Normal: 16-25 Intentos<br>-❌ Reprobado: 26 o mas Intentos"
+        info: "Voltea las cartas de las figuras historicas de Mexico y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "hum3.jpg",
-      title: "Memorama - 16 Cartas",
+      title: "Avances Tecnologicos - 16 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_23.html",
-        info: "Voltea las cartas de los avances tecnologicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-12 Intentos<br>-👍 Normal: 13-20 Intentos<br>-❌ Reprobado: 21 o mas Intentos"
+        info: "Voltea las cartas de los Avances Tecnologicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos 🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
      {
       img: "hum2.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Monumentos Historicos  - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_24.html",
-        info: "Voltea las cartas de los monumentos historicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-14 Intentos<br>-👍 Normal: 15-22 Intentos<br>-❌ Reprobado: 23 o mas Intentos"
+        info: "Voltea las cartas de los Monumentos Historicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
 	{
       img: "hum5.jpg",
-      title: "Memorama - 16 Cartas",
+      title: "Bellas Artes  - 16 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_25.html",
-        info: "Voltea las cartas de las Bellas Artes y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 8-13 Intentos<br>-👍 Normal: 14-21 Intentos<br>-❌ Reprobado: 22 o mas Intentos"
+        info: "Voltea las cartas de las Bellas Artes y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos-🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
 	{
       img: "hum6.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Trajes Tipicos - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_26.html",
-        info: "Voltea las cartas de los Trajes Tipicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-16 Intentos<br>-👍 Normal: 17-24 Intentos<br>-❌ Reprobado: 25 o mas Intentos"
+        info: "Voltea las cartas de los Trajes Tipicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "hum7.jpg",
-      title: "Memorama - 20 Cartas",
+      title: "Instrumentos Musicales - 20 Cartas",
       size: "INSTRUCCIONES:",
       link: "index_32.html",
-        info: "Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br>-🏅 Excelente: 10-16 Intentos<br>-👍 Normal: 17-24 Intentos<br>-❌ Reprobado: 25 o mas Intentos"
+        info: "Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
   ],
 };

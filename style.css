@@ -224,10 +224,6 @@ a {
   transform: scale(1.05);
 }
 
-#puzzleBtn{
-    background: linear-gradient(0deg, #00d96c, springgreen);
-}
-
 .playbtn{
     padding: 15px 40px;
    font-size: 3vh;
@@ -239,6 +235,7 @@ a {
     text-decoration: none;
     font-family: 'Candara', sans-serif;
     transition: 0.3s;
+    margin-top: 25px;
 }
     .playbtn:hover{
     transform: scale(1.05)
@@ -277,7 +274,7 @@ a {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 
 /* FLIP STATE */
@@ -451,7 +448,7 @@ a {
       border-radius: 5px;
       position: relative;
       transform-style: preserve-3d;
-      transition: transform 0.4s;
+      transition: transform 0.5s;
     }
 
 .card:hover{transform: scale(1.05)}
@@ -493,8 +490,8 @@ a {
 
     .win {
       position: fixed;
-      width: 260px;
-      height: 220px;
+      width: 420px;
+      height: 270px;
       background: rgba(0,0,0,0.6);
       display: flex;
         flex-direction: column;
@@ -502,6 +499,10 @@ a {
       align-items: center;
         color: white;
         z-index: 5;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid gold; 
+        box-shadow: 0px 0px 5px gold;
     }
 /* Add this to your style2.css */
 .text-card {
@@ -551,9 +552,6 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 2px;
 }
-#musicBtn{
-    background: linear-gradient(0deg, orangered, tomato);
-}
 
 .play-btn{
     font-size: 4em;
@@ -575,7 +573,7 @@ a {
 
 #aboutBtn{
     flex: 1;
-      padding: 5px 50px;
+      padding: 5px 70px;
       font-size: 2.5vh;
       border-radius: 20px;
       background: linear-gradient(0deg, #d6b22a, #f2c92f);
