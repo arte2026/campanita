@@ -242,15 +242,16 @@ function updateMoveCounter() {
 
 function showWin() {
   gameWon = true;
-
+const medal = getMedal(moveCount);
   const overlay = document.createElement("div");
   overlay.className = "win-overlay";
 
   overlay.innerHTML = `
     <div class="win-box">
       <h1>🎉 Completado!</h1>
-      <button onclick="restartPuzzle()">Reiniciar</button>
-      <button onclick="goBack()">Atras</button>
+<h1>Has ganado una medalla de:<br> ${medal.icon}</h1>
+      <button onclick="restartPuzzle()">Cerrar</button>
+      
     </div>
   `;
 
@@ -268,8 +269,29 @@ function goBack() {
 }
 function restartPuzzle() {
   document.querySelector(".win-overlay")?.remove();
-  init();
+  
 }
 init();
 renderThumbnails();
   
+  function getMedal(tries) {
+
+    if (moveCount <= 50) {
+        return {
+            icon: "🥇",
+        };
+    }
+
+    if (moveCount <= 99) {
+        return {
+            icon: "🥈",
+            
+        };
+    }
+
+    return {
+        icon: "🥉",
+        
+    };
+
+}

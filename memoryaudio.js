@@ -167,6 +167,7 @@ function resetTurn() {
 }
 
 function showWin() {
+    const medal = getMedal(tries);
     // Play the win sound
   winSound.currentTime = 0;
   winSound.play();
@@ -175,11 +176,12 @@ function showWin() {
   win.className = "win";
 
   win.innerHTML = `
-    <h1 id="winner">🎉 Completado!</h1>
+    <h1>🎉 !Completado! 🎊</h1>
+    <h1>Has ganado una medalla de:<br> ${medal.icon}</h1>
 
     <div class="bottom-buttons">
-      <button onclick="reloadPage()">Reiniciar</button>
-      <button onclick="goBack()">Atras</button>
+      <button onclick="goBack()">Regresar</button>
+<button onclick="reloadPage()">Reiniciar</button>
     </div>
   `;
 
@@ -196,3 +198,24 @@ function reloadPage() {
 
 init();
 
+function getMedal(tries) {
+
+    if (tries <= 20) {
+        return {
+            icon: "🥇",
+        };
+    }
+
+    if (tries <= 30) {
+        return {
+            icon: "🥈",
+            
+        };
+    }
+
+    return {
+        icon: "🥉",
+        
+    };
+
+}
