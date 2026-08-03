@@ -247,11 +247,15 @@ const medal = getMedal(moveCount);
   overlay.className = "win-overlay";
 
   overlay.innerHTML = `
-    <div class="win-box">
-      <h1>🎉 Completado!</h1>
-<h1>Has ganado una medalla de:<br> ${medal.icon}</h1>
-      <button onclick="restartPuzzle()">Cerrar</button>
-      
+    <div>
+      <h1>🎉 ¡Completado!</h1>
+<h1>Has ganado una medalla de:</h1>
+<h1><span style="font-size: 80px">${medal.icon}</span></h1>
+      <h3><br><br>*Te invito a instalar la version gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
+      <br><br>
+      <button onclick="restartPuzzle()">⨞</button>
+    </div>
+
     </div>
   `;
 

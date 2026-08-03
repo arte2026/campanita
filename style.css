@@ -228,7 +228,7 @@ a {
     padding: 15px 40px;
    font-size: 3vh;
     border-radius: 10px;
-    background: rgba(255,255,255,0.2);
+    background: gold;
     box-shadow: 0px 0px 7px #233234;
     border: 0px solid #233234; 
     color: black;
@@ -241,8 +241,15 @@ a {
     transform: scale(1.05)
 }
 #gobackbtn{
+   font-size: 3vh;
       background: linear-gradient(0deg, #00a4db, deepskyblue);
+      border-radius: 20px;
+        box-shadow: 0px 0px 7px #233234;
+        border: 0 solid #233234;
+        font-family: 'Candara', sans-serif;
+        
 }
+
 .info-screen {
   width: 100%;
     height: 100%;
@@ -366,32 +373,27 @@ a {
 }
 .win-overlay {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  animation: fadeIn 0.4s ease;
+      width: 80%;
+      height: 80%;
+      background: rgba(0,13,47,0.9);
+      display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+z-index: 5
 }
 
-.win-box {
-  background: rgba(0,0,0,0.6);
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  animation: scaleUp 0.3s ease;
-}
-
-.win-box button {
-  margin: 15px;
-  padding: 15px 35px;
-  border-radius: 18px;
+.win-overlay button {
+  margin: 5px;
+  padding: 10px 70px;
+  border-radius: 20px;
   border: none;
-  background: #f2c92f;
+  background: deepskyblue;
   cursor: pointer;
-    font-size: 20px;
+    font-size: 3vh;
 }
 
 /* Animations */
@@ -484,20 +486,21 @@ a {
 
     .win {
       position: fixed;
-      width: 420px;
-      height: 270px;
-      background: rgba(0,0,0,0.6);
+      width: 80%;
+      height: 80%;
+      background: rgba(0,13,47,0.9);
       display: flex;
         flex-direction: column;
       justify-content: center;
       align-items: center;
         color: white;
-        z-index: 5;
-        padding-bottom: 20px;
         border-radius: 10px;
-        border: 1px solid gold; 
-        box-shadow: 0px 0px 5px gold;
+        padding: 10px;
+        z-index: 5;
     }
+.win button{
+    padding: 5px 80px;
+}
 /* Add this to your style2.css */
 .text-card {
   display: flex;
@@ -570,11 +573,12 @@ a {
       padding: 5px 70px;
       font-size: 2.5vh;
       border-radius: 20px;
-      background: linear-gradient(0deg, #d6b22a, #f2c92f);
+      background: linear-gradient(0deg, #00d96c, springgreen);
         box-shadow: 0px 0px 7px #233234;
         border: 0 solid #233234;
         font-family: 'Candara', sans-serif;
         transition: 0.3s;
+    color: black;
 }
 #aboutBtn:hover{
    transform: scale(1.05)
