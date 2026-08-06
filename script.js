@@ -1,7 +1,6 @@
 const viewer = document.getElementById("viewerContent");
 const aboutBtn = document.getElementById("aboutBtn");
-const puzzleBtn = document.getElementById("puzzleBtn");
-const musicBtn = document.getElementById("musicBtn");
+
 // Default artwork view
 
 function loadArtwork(art) {
@@ -289,6 +288,10 @@ enterBtn.addEventListener("click", () => {
 welcomeScreen.addEventListener("click", () => {
   enterBtn.click();
 });
+
+function goBack() {
+  window.location.href = "english/index.html";
+}
 
 // Check if Service Workers are supported
 if ("serviceWorker" in navigator) {
