@@ -1,7 +1,7 @@
 // Sound Effects
-const matchSound = new Audio('match.mp3'); // Replace with your file name
-const mismatchSound = new Audio('error.mp3'); // Replace with your file name
-const winSound = new Audio("victory.mp3");
+const matchSound = new Audio('../match.mp3'); // Replace with your file name
+const mismatchSound = new Audio('../error.mp3'); // Replace with your file name
+const winSound = new Audio("../victory.mp3");
 winSound.preload = "auto"; // ensures it loads before use
 
 const grid = document.getElementById("grid");
@@ -73,7 +73,7 @@ function init() {
     grid.appendChild(card);
   });
     tries = 0;
-document.getElementById("tries").textContent = `Intentos: ${tries}`;
+document.getElementById("tries").textContent = `Tries: ${tries}`;
 }
 
 function flipCard(card, item) {
@@ -89,7 +89,7 @@ function flipCard(card, item) {
   secondCard = { card, item };
   lock = true;
 tries++;
-document.getElementById("tries").textContent = `Intentos: ${tries}`;
+document.getElementById("tries").textContent = `Tries: ${tries}`;
   // MATCH if pairId is same
   if (
     firstCard.item.pairId === secondCard.item.pairId &&
@@ -141,7 +141,7 @@ function showWin() {
     <h1>🎉 !Completed! 🎊</h1>
     <h1>You have won a medal:</h1>
 <h1><span style="font-size: 80px">${medal.icon}</span></h1>
-<h3><br><br>*I invite you to install the free version of this game for Android devices. <br>Available on the Google Play Store.</h3>
+<h4><br><br>*You can also install the free version of this game for Android devices. <br>Available on the Google Play Store.</h4>
       <br><br>
       <button id="gobackbtn" onclick="reloadPage()">⨞</button>
 

@@ -1,4 +1,4 @@
-const moveSound = new Audio('move.mp3');
+const moveSound = new Audio('../move.mp3');
 let moveCount = 0;
 let gameWon = false;
 
@@ -236,7 +236,7 @@ function countInversions(arr) {
 function updateMoveCounter() {
   const counter = document.getElementById("moveCounter");
   if (counter) {
-    counter.textContent = `Intentos: ${moveCount}`;
+    counter.textContent = `Tries: ${moveCount}`;
   }
 }
 
@@ -251,7 +251,7 @@ const medal = getMedal(moveCount);
       <h1>🎉 ¡Completed!</h1>
 <h1>You have won a medal:</h1>
 <h1><span style="font-size: 80px">${medal.icon}</span></h1>
-      <h3><br><br>*I invite you to install the free version of this game for Android devices. <br>Available on the Google Play Store.</h3>
+      <h4><br><br>*You can also install the free version of this game for Android devices. <br>Available on the Google Play Store.</h4>
       <br><br>
       <button onclick="restartPuzzle()">⨞</button>
     </div>
