@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <meta name="description" content="Juegos Educativos de Memoria y Rompecabezas">
+  <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
+  <meta name="author" content="Guillermo Rayas Monroy">
+    <link rel="stylesheet" href="style.css">
+    <title>Puzzles </title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Puzzles 🧩</h2>
+    </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer">
+         <!-- Thumbnails -->
+    <div class="thumbnails2">
+      <div id="thumbs" ></div>
+    </div>
+        
+  <div id="puzzle" class="puzzle"></div>
+</div>
+<div id="thumbs"></div>
+
+<div id="infoPanel">
+
+    <p id="infoText">.<br>.</p>
+
+</div>
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <button id="moveCounter">Tries: 0</button>
+        <div class="score">
+      🏅: -50 🥈: 51-99 🥉: 100+
+          </div>
+</div>
+  </div>
+   
+    <script type="text/javascript" src="puzzle.js"></script>
+    
+</body>
+</html>
