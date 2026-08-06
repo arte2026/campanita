@@ -6,45 +6,45 @@ const puzzleImages = [
   
  {
     image:"dino1.jpg",
-    description:"Herbívoro imponente de cuello largo que se alimentaba del follaje de las copas de los árboles. De movimientos lentos, sus extremidades delanteras eran más largas que las traseras, lo que le daba una espalda inclinada."
+    description:"An imposing, long-necked herbivore that fed on foliage from the treetops. Slow-moving, its front limbs were longer than its hind limbs, giving it a sloping back."
 },
 
 {
     image:"dino2.jpg",
-    description:"Depredador con poderosos músculos y mandíbulas capaces de triturar huesos; sus agudos sentidos le ayudaban a detectar presas. Sus enormes patas traseras le permitían alcanzar grandes velocidades, pero sus pequeños brazos eran vestigiales."
+    description:"A predator with powerful muscles and bone-crushing jaws; its keen senses helped it detect prey. Its massive hind legs allowed it to reach high speeds, while its small arms were vestigial."
 },
 
 {
     image:"dino3.jpg",
-    description:"Un depredador pequeño y veloz con garras afiladas y una agilidad de caza excepcional. Equipado con garras en forma de hoz y dientes afilados, utilizaba la velocidad, la coordinación y la astucia para capturar presas en manada."
+    description:"A small, swift predator with sharp claws and exceptional hunting agility. Equipped with sickle-shaped claws and sharp teeth, it used speed, coordination, and cunning to capture prey while hunting in packs."
 },
     {
     image:"dino4.jpg",
-    description:"Herbívoro acorazado con una distintiva hilera de placas óseas sobre su lomo y una cola con púas que utilizaba para defenderse. De movimientos lentos y baja estatura, pastaba en vegetación baja y dependía de su armadura para protegerse."
+    description:"An armored herbivore featuring a distinctive row of bony plates along its back and a spiked tail used for defense. Slow-moving and low-slung, it grazed on low-growing vegetation and relied on its armor for protection."
 },
     {
     image:"dino5.jpg",
-    description:"Herbívoro de cuerpo robusto, fuertemente acorazado y de baja estatura, cubierto de placas y nódulos óseos; su enorme cola con forma de maza asestaba poderosos golpes a los depredadores."
+    description:"A heavily armored, low-slung herbivore with a robust body covered in bony plates and nodules; its massive, club-like tail could deliver powerful blows to predators."
 },
     {
     image:"dino6.jpg",
-    description:"Gran herbívoro de tres cuernos con un cráneo macizo y una amplia gola; los cuernos se utilizaban para la defensa y el combate entre individuos de la misma especie. Participaba en exhibiciones sociales durante la época de apareamiento."
+    description:"A large, three-horned herbivore with a massive skull and a broad frill; its horns were used for defense and combat against others of its kind. It engaged in social displays during the mating season."
 },
     {
     image:"dino7.jpg",
-    description:"Gran reptil marino con extremidades en forma de remo y una cola poderosa. Un depredador oceánico que cazaba peces y otros reptiles marinos. Su cuerpo aerodinámico le permitía realizar persecuciones rápidas y emboscadas."
+    description:"A large marine reptile with paddle-like limbs and a powerful tail. An oceanic predator that hunted fish and other marine reptiles. Its streamlined body allowed for high-speed chases and ambushes."
 },
     {
     image:"dino8.jpg",
-    description:"Pterosaurio alado con alas membranosas extendidas entre sus largos dedos y el cuerpo; su esqueleto ligero le permitía un vuelo eficiente. Se alimentaban de peces o animales pequeños, sobrevolando costas y rios con gran agilidad."
+    description:"A winged pterosaur featuring membranes stretched between its long fingers and body; its lightweight skeleton enabled efficient flight. It fed on fish or small animals, soaring over coasts and rivers with great agility."
 },
     {
     image:"dino9.jpg",
-    description:"Depredador robusto y musculoso con caninos superiores alargados. Especialista en emboscadas, dependía del sigilo y la fuerza. La caza en grupo probablemente contribuyeron a abatir grandes presas con el tiempo."
+    description:"A robust, muscular predator with elongated upper canines. An ambush specialist, it relied on stealth and strength. Group hunting likely helped it take down large prey."
 },
     {
     image:"dino10.jpg",
-    description:"Pariente del elefante, con largos colmillos curvos y pelaje grueso, adaptado al frío de la Edad de Hielo; se alimentaba de hierbas, arbustos y plantas leñosas. El cambio climatico y la caza humana causaron su extincion a lo largo de milenios."
+    description:"A relative of the elephant, featuring long, curved tusks and thick fur adapted to the cold of the Ice Age; it fed on grasses, shrubs, and woody plants. Climate change and human hunting led to its extinction over the course of millennia."
 },
 ];
 
@@ -248,10 +248,10 @@ const medal = getMedal(moveCount);
 
   overlay.innerHTML = `
     <div>
-      <h1>🎉 ¡Completado!</h1>
-<h1>Has ganado una medalla de:</h1>
+      <h1>🎉 ¡Completed!</h1>
+<h1>You have won a medal:</h1>
 <h1><span style="font-size: 80px">${medal.icon}</span></h1>
-      <h3><br><br>*Te invito a instalar la version gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
+      <h3><br><br>*I invite you to install the free version of this game for Android devices. <br>Available on the Google Play Store.</h3>
       <br><br>
       <button onclick="restartPuzzle()">⨞</button>
     </div>

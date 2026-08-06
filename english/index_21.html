@@ -7,12 +7,12 @@
   <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
   <meta name="author" content="Guillermo Rayas Monroy">
     <link rel="stylesheet" href="style.css">
-    <title>Capitals of Europe and Africa</title>
+    <title>Historia Universal</title>
 <style>
 .back {
       --s: 15px; /* control the size*/
-  --c1: darkgreen;
-  --c2: limegreen;
+  --c1: darkred;
+  --c2: orangered;
   
   --_g: 
     #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
@@ -34,8 +34,9 @@
 
     <!-- Header -->
     <div class="header">
-        <h2>Capitals of Europe and Africa 🌍</h2>
+      <h2> Universal History</h2>
     </div>
+      
 
     <!-- Main Viewer -->
     <div class="viewer2">
@@ -47,87 +48,58 @@
     <div class="bottom-buttons">
         <button id="gobackbtn" onclick="goBack()">⨞</button>
         <div id="tries">Tries: 0</div>
-         <div class="score">
-      Score:  🥇: -26 🥈: -40 🥉: 41+
+        <div class="score">
+      Score:  🥇: -20 🥈: -30 🥉: 31+
           </div>
 </div>
   </div>
     <script>
-    // QUESTION → ANSWER PAIRS
+     // QUESTION → ANSWER PAIRS
 const pairs = [
   {
-    question: "cards21.jpg",
-    answer: "El Cairo"
+    question: "cards3a1.jpg",
+    answer: "Alejandro Magno 356 - 323 a.C."
   },
   {
-    question: "cards22.jpg",
-    answer: "Pretoria"
+    question: "cards3a2.jpg",
+    answer: "Julio César 100 - 44 a.C."
   },
   {
-    question: "cards23.jpg",
-    answer: "Alger"
+    question: "cards3a3.jpg",
+    answer: "Napoleón Bonaparte 1769 - 1821"
   },
   {
-    question: "cards26.jpg",
-    answer: "Abuya"
+    question: "cards3a6.jpg",
+    answer: "Albert Einstein 1879 - 1955" 
   },
   {
-    question: "cards27.jpg",
-    answer: "Nairobi"
+    question: "cards3a4.jpg",
+    answer: "Cristobal Colón 1451 - 1506"
   },
     {
-    question: "cards41.jpg",
-    answer: "Madrid"
+    question: "cards3a5.jpg",
+    answer: "Abraham Lincoln 1809 - 1865"
   },
     {
-    question: "cards42.jpg",
-    answer: "Paris"
+    question: "cards3a7.jpg",
+    answer: "Mahatma Gandhi 1869 - 1948"
   },
     {
-    question: "cards43.jpg",
-    answer: "Berlin"
+    question: "cards3a8.jpg",
+    answer: "Leonardo da Vinci 1452 - 1519"
   },
     {
-    question: "cards45.jpg",
-    answer: "Kiev"
+    question: "cards3a9.jpg",
+    answer: "William Shakespeare 1564 - 1616"
   },
     {
-    question: "cards46.jpg",
-    answer: "Estocolmo"
+    question: "cards3a11.jpg",
+    answer: "Nelson Mandela 1918 - 2013"
   },
-    {
-    question: "cards47.jpg",
-    answer: "Londres"
-  },
-   {
-    question: "cards48.jpg",
-    answer: "Roma"
-  }, 
+    
 ];
-    </script> 
-    <script type="text/javascript" src="memory.js"></script>
-    <script>
-    function getMedal(tries) {
-
-    if (tries <= 26) {
-        return {
-            icon: "🥇",
-        };
-    }
-
-    if (tries <= 40) {
-        return {
-            icon: "🥈",
-            
-        };
-    }
-
-    return {
-        icon: "🥉",
-        
-    };
-
-}
     </script>
+    <script type="text/javascript" src="memory.js"></script>
+    
 </body>
 </html>

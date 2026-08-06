@@ -7,12 +7,12 @@
   <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
   <meta name="author" content="Guillermo Rayas Monroy">
     <link rel="stylesheet" href="style.css">
-    <title>Capitals of Europe and Africa</title>
+    <title>Instrumentos Musicales</title>
 <style>
 .back {
       --s: 15px; /* control the size*/
-  --c1: darkgreen;
-  --c2: limegreen;
+  --c1: darkorange;
+  --c2: gold;
   
   --_g: 
     #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
@@ -34,7 +34,7 @@
 
     <!-- Header -->
     <div class="header">
-        <h2>Capitals of Europe and Africa 🌍</h2>
+      <h2> Musical Instruments 🎼</h2>
     </div>
 
     <!-- Main Viewer -->
@@ -47,87 +47,60 @@
     <div class="bottom-buttons">
         <button id="gobackbtn" onclick="goBack()">⨞</button>
         <div id="tries">Tries: 0</div>
-         <div class="score">
-      Score:  🥇: -26 🥈: -40 🥉: 41+
+        <div class="score">
+      Score:  🥇: -20 🥈: -30 🥉: 31+
           </div>
 </div>
   </div>
     <script>
-    // QUESTION → ANSWER PAIRS
+     // QUESTION → ANSWER PAIRS
 const pairs = [
   {
-    question: "cards21.jpg",
-    answer: "El Cairo"
+    question: "banjo.mp3",
+    answer: "Banjo"
   },
   {
-    question: "cards22.jpg",
-    answer: "Pretoria"
+    question: "drum.mp3",
+    answer: "Bateria 🥁"
   },
   {
-    question: "cards23.jpg",
-    answer: "Alger"
+    question: "flauta.mp3",
+    answer: "Flauta"
   },
   {
-    question: "cards26.jpg",
-    answer: "Abuya"
+    question: "harm.mp3",
+    answer: "Harmonica" 
   },
   {
-    question: "cards27.jpg",
-    answer: "Nairobi"
+    question: "electr.mp3",
+    answer: "Guitarra Electrica 🎸"
   },
     {
-    question: "cards41.jpg",
-    answer: "Madrid"
+    question: "trump.mp3",
+    answer: "Trompeta 🎺"
   },
     {
-    question: "cards42.jpg",
-    answer: "Paris"
+    question: "viol.mp3",
+    answer: "Violin 🎻"
   },
     {
-    question: "cards43.jpg",
-    answer: "Berlin"
+    question: "piano.mp3",
+    answer: "Piano 🎹"
   },
     {
-    question: "cards45.jpg",
-    answer: "Kiev"
+    question: "synth.mp3",
+    answer: "Sintetizador 🎘"
   },
-    {
-    question: "cards46.jpg",
-    answer: "Estocolmo"
+  {
+    question: "guitr.mp3",
+    answer: "Guitarra Acustica"
   },
-    {
-    question: "cards47.jpg",
-    answer: "Londres"
-  },
-   {
-    question: "cards48.jpg",
-    answer: "Roma"
-  }, 
-];
-    </script> 
-    <script type="text/javascript" src="memory.js"></script>
-    <script>
-    function getMedal(tries) {
-
-    if (tries <= 26) {
-        return {
-            icon: "🥇",
-        };
-    }
-
-    if (tries <= 40) {
-        return {
-            icon: "🥈",
-            
-        };
-    }
-
-    return {
-        icon: "🥉",
-        
-    };
-
-}
-    </script>
+];</script>
+    <script src="memoryaudio.js"></script>
+	<audio >
+  <source src="electr.mp3" type="audio/mp3">
+</audio>
+<script type="text/javascript" src="memory.js"></script>
+   
 </body>
 </html>

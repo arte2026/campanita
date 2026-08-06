@@ -7,12 +7,12 @@
   <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
   <meta name="author" content="Guillermo Rayas Monroy">
     <link rel="stylesheet" href="style.css">
-    <title>Capitals of Europe and Africa</title>
+    <title>Monumentos</title>
 <style>
 .back {
       --s: 15px; /* control the size*/
-  --c1: darkgreen;
-  --c2: limegreen;
+  --c1: maroon;
+  --c2: crimson;
   
   --_g: 
     #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
@@ -34,7 +34,7 @@
 
     <!-- Header -->
     <div class="header">
-        <h2>Capitals of Europe and Africa 🌍</h2>
+      <h2> Historical Monuments 🗽</h2>
     </div>
 
     <!-- Main Viewer -->
@@ -47,87 +47,56 @@
     <div class="bottom-buttons">
         <button id="gobackbtn" onclick="goBack()">⨞</button>
         <div id="tries">Tries: 0</div>
-         <div class="score">
-      Score:  🥇: -26 🥈: -40 🥉: 41+
+        <div class="score">
+      Score:  🥇: -20 🥈: -30 🥉: 31+
           </div>
 </div>
   </div>
     <script>
-    // QUESTION → ANSWER PAIRS
+     // QUESTION → ANSWER PAIRS
 const pairs = [
   {
-    question: "cards21.jpg",
-    answer: "El Cairo"
+    question: "cards3d1.jpg",
+    answer: "Chichen Itza"
   },
   {
-    question: "cards22.jpg",
-    answer: "Pretoria"
+    question: "cards3d2.jpg",
+    answer: "Taj Mahal"
   },
   {
-    question: "cards23.jpg",
-    answer: "Alger"
+    question: "cards3d3.jpg",
+    answer: "Stonehenge"
   },
   {
-    question: "cards26.jpg",
-    answer: "Abuya"
+    question: "cards3d6.jpg",
+    answer: "Gran Muralla China" 
   },
   {
-    question: "cards27.jpg",
-    answer: "Nairobi"
+    question: "cards3d4.jpg",
+    answer: "Petra"
   },
     {
-    question: "cards41.jpg",
-    answer: "Madrid"
+    question: "cards3d5.jpg",
+    answer: "Piramide de Guiza"
   },
     {
-    question: "cards42.jpg",
-    answer: "Paris"
+    question: "cards3d7.jpg",
+    answer: "Coliseo Romano"
   },
     {
-    question: "cards43.jpg",
-    answer: "Berlin"
+    question: "cards3d8.jpg",
+    answer: "Machu Picchu"
   },
     {
-    question: "cards45.jpg",
-    answer: "Kiev"
+    question: "cards3d9.jpg",
+    answer: "El Partenon"
   },
-    {
-    question: "cards46.jpg",
-    answer: "Estocolmo"
+  {
+    question: "cards3d10.jpg",
+    answer: "Catedral San Basilio"
   },
-    {
-    question: "cards47.jpg",
-    answer: "Londres"
-  },
-   {
-    question: "cards48.jpg",
-    answer: "Roma"
-  }, 
 ];
-    </script> 
-    <script type="text/javascript" src="memory.js"></script>
-    <script>
-    function getMedal(tries) {
-
-    if (tries <= 26) {
-        return {
-            icon: "🥇",
-        };
-    }
-
-    if (tries <= 40) {
-        return {
-            icon: "🥈",
-            
-        };
-    }
-
-    return {
-        icon: "🥉",
-        
-    };
-
-}
     </script>
+    <script src="memory.js"></script>
 </body>
 </html>

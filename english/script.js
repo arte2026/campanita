@@ -29,11 +29,11 @@ aboutBtn.addEventListener("click", () => {
     <div class="info-screen">
 	
     <h1>🧩 🧩 🧩 🧩</h1>
-      <h2>Rompecabezas</h2>
+      <h2>Puzzles</h2>
       
-      <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
-	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 🥈 Normal: 51-99 Intentos<br> 🥉 Insuficiente: 100 o mas Intentos</p><br>
-<a class="playbtn" href="index_2.html">Jugar</a>
+      <p>INSTRUCTIONS: Click on the tiles surrounding the empty space to move them and complete the puzzle.</p>
+	  <p>Score:<br>🏅 Excelent: 0-50 Tries<br> 🥈 Normal: 51-99 Tries<br> 🥉 Insufficient: 100 o mas Tries</p><br>
+<a class="playbtn" href="index_2.html">Play</a>
 
     </div>
   `;
@@ -44,54 +44,54 @@ const artworks = {
   rock: [
     {
       img: "geo1.jpg",
-      title: "Capitales de America - 24 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Capitales de America - 24 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_3.html",
-        info: "Voltea las cartas de los paises de America y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 26 Intentos  🥈 Normal: - 40 Intentos  🥉 Insuficiente: 41 + Intentos"
+        info: "Flip over the cards of the countries of the Americas and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 26 Tries  🥈 Normal: - 40 Tries  🥉 Insufficient: 41 + Tries"
     },
     {
       img: "geo2.jpg",
-      title: "Capitales de Europa y Africa - 24 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Capitales de Europa y Africa - 24 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_4.html",
-        info: "Voltea las cartas de los paises de Europa y Africa y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 26 Intentos  🥈 Normal: - 40 Intentos  🥉 Insuficiente: 41 + Intentos"
+        info: "Flip over the cards of the countries of Europe and Africa and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 26 Tries  🥈 Normal: - 40 Tries  🥉 Insufficient: 41 + Tries"
     },
       {
       img: "geo3.jpg",
-      title: "Capitales de Asia y Oceania - 22 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Capitales de Asia y Oceania - 22 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_5.html",
-        info: "Voltea las cartas de los paises de Asia y Oceania y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
+        info: "Flip over the cards of the countries of Asia and Oceania and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 23 Tries  🥈 Normal: - 35 Tries  🥉 Insufficient: 36 + Tries"
     },
       
       {
       img: "geo11.jpg",
-      title: "Capitales de Mexico #1 - 22 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Capitales de Mexico #1 - 22 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_6.html",
-        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
+        info: "Flip over the cards of the states of Mexico and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 23 Tries  🥈 Normal: - 35 Tries  🥉 Insufficient: 36 + Tries"
     },
       
       {
       img: "geo12.jpg",
-      title: "Capitales de Mexico #2 - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Capitales de Mexico #2 - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_7.html",
-        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the states of Mexico and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "geo13.jpg",
-      title: "Capitales de Mexico #3 - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Capitales de Mexico #3 - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_8.html",
-        info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the states of Mexico and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "geo21.jpg",
-      title: "Biomas y Climas - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Biomes and Climate - 16 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_9.html",
-        info: "Voltea las cartas de los Biomas y Climas del mundo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos 🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
+        info: "Flip over the cards of the Biomes and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries 🥈 Normal: -21 Tries 🥉 Insufficient: 22 o mas Tries"
     },
       
   ],
@@ -99,98 +99,98 @@ const artworks = {
   hollywood: [
     {
       img: "ana1.jpg",
-      title: "Planetas del Sistema Solar - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Planets of the Solar System- 16 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_11.html",
-        info: "Voltea las cartas de los Planetas del Sistema Solar y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos  🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
+        info: "Flip over the cards of the Planets of the Solar System and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries  🥈 Normal: -21 Tries 🥉 Insufficient: 22 o mas Tries"
     },
     
     {
       img: "anat3.jpg",
-      title: "Elementos Quimicos - 22 Cartas",
-      size: "INSTRUCCIONES:",
+      title: " Quimical Elements - 22 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_13.html",
-        info: "Voltea las cartas de los Elementos Quimicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
+        info: "Flip over the cards of the Quimical Elements and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 23 Tries  🥈 Normal: - 35 Tries  🥉 Insufficient: 36 + Tries"
     },
       {
       img: "ana4.jpg",
-      title: "Organos del Cuerpo Humano - 18 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Organs of the Human Body - 18 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_12.html",
-        info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -17 Intentos 🥈 Normal: -25 Intentos 🥉 Insuficiente: 26 o mas Intentos"
+        info: "Flip over the cards of the Organs of the Human Body and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -17 Tries 🥈 Normal: -25 Tries 🥉 Insufficient: 26 o mas Tries"
     },
       {
       img: "ana2.jpg",
-      title: "Reino Animal  - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Animal Kingdom - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_14.html",
-        info: "Voltea las cartas de las especies del Reino Animal y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the Animal Kingdom species and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "ana5.jpg",
-      title: "Magnitudes Fisicas - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Physical Quantities - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_15.html",
-        info: "Voltea las cartas de las Magnitudes Fisicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the Physical Quantities and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
        {
       img: "anat6.jpg",
-      title: "Figuras Geometricas 3D - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: " Geometric Figures 3D - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_31.html",
-        info: "Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the Geometric Figures  3D and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
   ],
 
   sports: [
     {
       img: "hum1.jpg",
-      title: "Figuras Historicas - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Universal History - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_21.html",
-        info: "Voltea las cartas de las Figuras Historicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the Universal History Figures and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
      {
       img: "hum4.jpg",
-      title: "Figuras Historicas de Mexico - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "History of Mexico - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_22.html",
-        info: "Voltea las cartas de las figuras historicas de Mexico y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the History of Mexico Figures and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "hum3.jpg",
-      title: "Avances Tecnologicos - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      title: " Tecnological Advances - 16 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_23.html",
-        info: "Voltea las cartas de los Avances Tecnologicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos 🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
+        info: "Flip over the cards of the Tecnological Advances  and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries 🥈 Normal: -21 Tries 🥉 Insufficient: 22 o mas Tries"
     },
      {
       img: "hum2.jpg",
-      title: "Monumentos Historicos  - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: " Historical Monuments  - 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_24.html",
-        info: "Voltea las cartas de los Monumentos Historicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the Historical Monuments and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
 	{
       img: "hum5.jpg",
-      title: "Bellas Artes  - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Fine Arts  - 16 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_25.html",
-        info: "Voltea las cartas de las Bellas Artes y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos-🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
+        info: "Flip over the cards of the Fine Arts and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries-🥈 Normal: -21 Tries 🥉 Insufficient: 22 o mas Tries"
     },
 	{
       img: "hum6.jpg",
-      title: "Trajes Tipicos - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: "Traditional Costumes- 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_26.html",
-        info: "Voltea las cartas de los Trajes Tipicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the Traditional Costumes and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "hum7.jpg",
-      title: "Instrumentos Musicales - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      title: " Musical Instruments- 20 Cards",
+      size: "INSTRUCTIONS:",
       link: "index_32.html",
-        info: "Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+        info: "Flip over the cards of the sounds of Musical Instruments and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
   ],
 };
@@ -290,7 +290,7 @@ welcomeScreen.addEventListener("click", () => {
 });
 
 function goBack() {
-  window.location.href = "english/index.html";
+  window.location.href = "/index.html";
 }
 
 // Check if Service Workers are supported

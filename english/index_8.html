@@ -7,7 +7,7 @@
   <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
   <meta name="author" content="Guillermo Rayas Monroy">
     <link rel="stylesheet" href="style.css">
-    <title>Capitals of Europe and Africa</title>
+    <title>Capitales de Mexico</title>
 <style>
 .back {
       --s: 15px; /* control the size*/
@@ -34,7 +34,7 @@
 
     <!-- Header -->
     <div class="header">
-        <h2>Capitals of Europe and Africa 🌍</h2>
+      <h2>Capitals of Mexico #3</h2>
     </div>
 
     <!-- Main Viewer -->
@@ -47,87 +47,58 @@
     <div class="bottom-buttons">
         <button id="gobackbtn" onclick="goBack()">⨞</button>
         <div id="tries">Tries: 0</div>
-         <div class="score">
-      Score:  🥇: -26 🥈: -40 🥉: 41+
+        <div class="score">
+      Score:  🥇: -20 🥈: -30 🥉: 31+
           </div>
 </div>
   </div>
     <script>
-    // QUESTION → ANSWER PAIRS
+     // QUESTION → ANSWER PAIRS
 const pairs = [
-  {
-    question: "cards21.jpg",
-    answer: "El Cairo"
-  },
-  {
-    question: "cards22.jpg",
-    answer: "Pretoria"
-  },
-  {
-    question: "cards23.jpg",
-    answer: "Alger"
-  },
-  {
-    question: "cards26.jpg",
-    answer: "Abuya"
-  },
-  {
-    question: "cards27.jpg",
-    answer: "Nairobi"
-  },
     {
-    question: "cards41.jpg",
-    answer: "Madrid"
-  },
-    {
-    question: "cards42.jpg",
-    answer: "Paris"
-  },
-    {
-    question: "cards43.jpg",
-    answer: "Berlin"
-  },
-    {
-    question: "cards45.jpg",
-    answer: "Kiev"
-  },
-    {
-    question: "cards46.jpg",
-    answer: "Estocolmo"
-  },
-    {
-    question: "cards47.jpg",
-    answer: "Londres"
-  },
-   {
-    question: "cards48.jpg",
-    answer: "Roma"
+    question: "cards72.jpg",
+    answer: "Puebla"
   }, 
+  {
+    question: "cards73.jpg",
+    answer: "Villahermosa"
+  },
+  {
+    question: "cards74.jpg",
+    answer: "Tuxtla Gutierrez"
+  },
+  {
+    question: "cards75.jpg",
+    answer: "Campeche"
+  },
+  {
+    question: "cards76.jpg",
+    answer: "Merida"
+  },
+  {
+    question: "cards77.jpg",
+    answer: "Chetumal"
+  },
+    {
+    question: "cards78.jpg",
+    answer: "Tlaxcala"
+  },
+    {
+    question: "cards79.jpg",
+    answer: "Colima"
+  },
+    {
+    question: "cards80.jpg",
+    answer: "Aguascalientes"
+  },
+    {
+    question: "cards81.jpg",
+    answer: "Cuernavaca"
+  },
+    
 ];
-    </script> 
-    <script type="text/javascript" src="memory.js"></script>
-    <script>
-    function getMedal(tries) {
-
-    if (tries <= 26) {
-        return {
-            icon: "🥇",
-        };
-    }
-
-    if (tries <= 40) {
-        return {
-            icon: "🥈",
-            
-        };
-    }
-
-    return {
-        icon: "🥉",
-        
-    };
-
-}
     </script>
+    <script type="text/javascript" src="memory.js"></script>
+    
 </body>
 </html>

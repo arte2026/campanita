@@ -7,12 +7,12 @@
   <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
   <meta name="author" content="Guillermo Rayas Monroy">
     <link rel="stylesheet" href="style.css">
-    <title>Capitals of Europe and Africa</title>
+    <title>Trajes Tipicos</title>
 <style>
 .back {
       --s: 15px; /* control the size*/
-  --c1: darkgreen;
-  --c2: limegreen;
+  --c1: maroon;
+  --c2: crimson;
   
   --_g: 
     #0000 calc(-650%/13) calc(50%/13),var(--c1) 0 calc(100%/13),
@@ -34,7 +34,7 @@
 
     <!-- Header -->
     <div class="header">
-        <h2>Capitals of Europe and Africa 🌍</h2>
+      <h2>Traditional Costumes</h2>
     </div>
 
     <!-- Main Viewer -->
@@ -47,87 +47,56 @@
     <div class="bottom-buttons">
         <button id="gobackbtn" onclick="goBack()">⨞</button>
         <div id="tries">Tries: 0</div>
-         <div class="score">
-      Score:  🥇: -26 🥈: -40 🥉: 41+
+        <div class="score">
+      Score:  🥇: -20 🥈: -30 🥉: 31+
           </div>
 </div>
   </div>
     <script>
-    // QUESTION → ANSWER PAIRS
+     // QUESTION → ANSWER PAIRS
 const pairs = [
   {
-    question: "cards21.jpg",
-    answer: "El Cairo"
+    question: "cards3f1.jpg",
+    answer: "Sari"
   },
   {
-    question: "cards22.jpg",
-    answer: "Pretoria"
+    question: "cards3f2.jpg",
+    answer: "Kimono"
   },
   {
-    question: "cards23.jpg",
-    answer: "Alger"
+    question: "cards3f3.jpg",
+    answer: "Vestido de Jalisco"
   },
   {
-    question: "cards26.jpg",
-    answer: "Abuya"
+    question: "cards3f6.jpg",
+    answer: "Bunad" 
   },
   {
-    question: "cards27.jpg",
-    answer: "Nairobi"
+    question: "cards3f4.jpg",
+    answer: "Thobe"
   },
     {
-    question: "cards41.jpg",
-    answer: "Madrid"
+    question: "cards3f5.jpg",
+    answer: "Kente"
   },
     {
-    question: "cards42.jpg",
-    answer: "Paris"
+    question: "cards3f7.jpg",
+    answer: "Tartan"
   },
     {
-    question: "cards43.jpg",
-    answer: "Berlin"
+    question: "cards3f8.jpg",
+    answer: "Hanbok"
   },
     {
-    question: "cards45.jpg",
-    answer: "Kiev"
+    question: "cards3f9.jpg",
+    answer: "Lederhosen"
   },
-    {
-    question: "cards46.jpg",
-    answer: "Estocolmo"
+  {
+    question: "cards3f10.jpg",
+    answer: "Qipao"
   },
-    {
-    question: "cards47.jpg",
-    answer: "Londres"
-  },
-   {
-    question: "cards48.jpg",
-    answer: "Roma"
-  }, 
 ];
-    </script> 
-    <script type="text/javascript" src="memory.js"></script>
-    <script>
-    function getMedal(tries) {
-
-    if (tries <= 26) {
-        return {
-            icon: "🥇",
-        };
-    }
-
-    if (tries <= 40) {
-        return {
-            icon: "🥈",
-            
-        };
-    }
-
-    return {
-        icon: "🥉",
-        
-    };
-
-}
     </script>
+    <script src="memory.js"></script>
 </body>
 </html>

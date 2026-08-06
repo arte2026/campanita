@@ -7,7 +7,7 @@ winSound.preload = "auto"; // ensures it loads before use
 const grid = document.getElementById("grid");
 
 let tries = 0;
-let currentAudio = null;
+
 
 // Create cards array
 let cards = [];
@@ -17,7 +17,7 @@ pairs.forEach((pair, index) => {
   // The Image Card
   cards.push({
     content: pair.question,
-    type: 'audio',
+    type: 'image',
     pairId: index
   });
 
@@ -56,35 +56,11 @@ function init() {
     card.className = "card";
 
     // Check type to decide how to show the "front"
-    if (item.type === 'audio') {
+    if (item.type === 'image') {
       card.innerHTML = `
-        <div class="front audio-card">
-        <button class="play-btn">🎶</button>
-    </div>
+        <div class="front" style="background-image:url(${item.content})"></div>
         <div class="back"></div>
       `;
-	  
-	  const playBtn = card.querySelector(".play-btn");
-
-playBtn.addEventListener("click", function(e){
-
-    // Don't flip the card
-    e.stopPropagation();
-
-    // Stop previous sound
-    if(currentAudio){
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
-
-    // Load this sound
-    currentAudio = new Audio(item.content);
-
-    // Play it
-    currentAudio.play();
-
-});
-	  
     } else {
       card.innerHTML = `
         <div class="front text-card">${item.content}</div>
@@ -104,20 +80,6 @@ function flipCard(card, item) {
   if (lock || card.classList.contains("flip")) return;
 
   card.classList.add("flip");
-
-if (item.type === "audio") {
-
-    // Stop the previous sound if one is playing
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
-
-    // Create and play the new sound
-    currentAudio = new Audio(item.content);
-    currentAudio.play();
-
-}
 
   if (!firstCard) {
     firstCard = { card, item };
@@ -182,6 +144,7 @@ function showWin() {
 <h3><br><br>*I invite you to install the free version of this game for Android devices. <br>Available on the Google Play Store.</h3>
       <br><br>
       <button id="gobackbtn" onclick="reloadPage()">⨞</button>
+
   `;
 
   document.body.appendChild(win);

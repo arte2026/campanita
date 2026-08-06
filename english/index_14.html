@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <meta name="description" content="Juegos Educativos de Memoria y Rompecabezas">
+  <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
+  <meta name="author" content="Guillermo Rayas Monroy">
+    <link rel="stylesheet" href="style.css">
+    <title>Reino Animal</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Animal Kingdom 🐻</h2>
+    </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <div id="tries">Tries: 0</div>
+        <div class="score">
+      Score:  🥇: -20 🥈: -30 🥉: 31+
+          </div>
+</div>
+  </div>
+    <script>
+     // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards2d1.jpg",
+    answer: "Peces"
+  },
+  {
+    question: "cards2d2.jpg",
+    answer: "Mamiferos"
+  },
+  {
+    question: "cards2d3.jpg",
+    answer: "Aves"
+  },
+  {
+    question: "cards2d6.jpg",
+    answer: "Anfibios"
+  },
+  {
+    question: "cards2d4.jpg",
+    answer: "Reptiles"
+  },
+    {
+    question: "cards2d5.jpg",
+    answer: "Insectos"
+  },
+    {
+    question: "cards2d7.jpg",
+    answer: "Aracnidos"
+  },
+    {
+    question: "cards2d8.jpg",
+    answer: "Crustaceos"
+  },
+  {
+    question: "cards2d9.jpg",
+    answer: "Moluscos"
+  },
+    {
+    question: "cards2d10.jpg",
+    answer: "Equinodermos"
+  },
+];
+    </script>
+    <script type="text/javascript" src="memory.js"></script>
+    
+</body>
+</html>
