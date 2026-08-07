@@ -290,7 +290,7 @@ welcomeScreen.addEventListener("click", () => {
 });
 
 function goBack() {
-  window.location.href = "/index.html";
+  window.location.href = "../index.html";
 }
 
 // Check if Service Workers are supported
