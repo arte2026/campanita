@@ -5,46 +5,46 @@ let gameWon = false;
 const puzzleImages = [
   
  {
-    image:"dino1.jpg",
-    description:"An imposing, long-necked herbivore that fed on foliage from the treetops. Slow-moving, its front limbs were longer than its hind limbs, giving it a sloping back."
+    image:"../dino1.jpg",
+    description:"Brachiosaurus: An imposing, long-necked herbivore that fed on foliage from the treetops. Slow-moving, its front limbs were longer than its hind limbs, giving it a sloping back."
 },
 
 {
-    image:"dino2.jpg",
-    description:"A predator with powerful muscles and bone-crushing jaws; its keen senses helped it detect prey. Its massive hind legs allowed it to reach high speeds, while its small arms were vestigial."
+    image:"../dino2.jpg",
+    description:"Tyrannosaurus rex: A predator with powerful muscles and bone-crushing jaws; its keen senses helped it detect prey. Its massive hind legs allowed it to reach high speeds; its small arms were vestigial."
 },
 
 {
-    image:"dino3.jpg",
-    description:"A small, swift predator with sharp claws and exceptional hunting agility. Equipped with sickle-shaped claws and sharp teeth, it used speed, coordination, and cunning to capture prey while hunting in packs."
+    image:"../dino3.jpg",
+    description:"Velociraptor: A small, swift predator with sharp claws and exceptional hunting agility. Equipped with sickle-shaped claws and sharp teeth, it used coordination and cunning to capture prey while hunting in packs."
 },
     {
-    image:"dino4.jpg",
-    description:"An armored herbivore featuring a distinctive row of bony plates along its back and a spiked tail used for defense. Slow-moving and low-slung, it grazed on low-growing vegetation and relied on its armor for protection."
+    image:"../dino4.jpg",
+    description:"Stegosaurus: An armored herbivore featuring a row of bony plates along its back and a spiked tail used for defense. Slow-moving and low-slung, it grazed on low-growing vegetation and relied on its armor for protection."
 },
     {
-    image:"dino5.jpg",
-    description:"A heavily armored, low-slung herbivore with a robust body covered in bony plates and nodules; its massive, club-like tail could deliver powerful blows to predators."
+    image:"../dino5.jpg",
+    description:"Ankylosaurus: A heavily armored, low-slung herbivore with a robust body covered in bony plates and nodules; its massive, club-like tail could deliver powerful blows to predators."
 },
     {
-    image:"dino6.jpg",
-    description:"A large, three-horned herbivore with a massive skull and a broad frill; its horns were used for defense and combat against others of its kind. It engaged in social displays during the mating season."
+    image:"../dino6.jpg",
+    description:"Triceratops: A large, three-horned herbivore with a massive skull and a broad frill; its horns were used for defense and combat against others of its kind. It engaged in social displays during mating."
 },
     {
-    image:"dino7.jpg",
-    description:"A large marine reptile with paddle-like limbs and a powerful tail. An oceanic predator that hunted fish and other marine reptiles. Its streamlined body allowed for high-speed chases and ambushes."
+    image:"../dino7.jpg",
+    description:"Mosasaurus: A large marine reptile with paddle-like limbs and a powerful tail. A predator that hunted fish and other marine reptiles. Its streamlined body allowed for high-speed chases and ambushes."
 },
     {
-    image:"dino8.jpg",
-    description:"A winged pterosaur featuring membranes stretched between its long fingers and body; its lightweight skeleton enabled efficient flight. It fed on fish or small animals, soaring over coasts and rivers with great agility."
+    image:"../dino8.jpg",
+    description:"Pterodactylus: A winged pterosaur featuring membranes stretched between its long fingers and body; its lightweight skeleton enabled efficient flight. It fed on fish or small animals, soaring over coasts and rivers with great agility."
 },
     {
-    image:"dino9.jpg",
-    description:"A robust, muscular predator with elongated upper canines. An ambush specialist, it relied on stealth and strength. Group hunting likely helped it take down large prey."
+    image:"../dino9.jpg",
+    description:"Smilodon: A robust, muscular predator with elongated upper canines. An ambush specialist, it relied on stealth and strength. Group hunting likely helped it take down large prey."
 },
     {
-    image:"dino10.jpg",
-    description:"A relative of the elephant, featuring long, curved tusks and thick fur adapted to the cold of the Ice Age; it fed on grasses, shrubs, and woody plants. Climate change and human hunting led to its extinction over the course of millennia."
+    image:"../dino10.jpg",
+    description:"Mammoth: A relative of the elephant, featuring long, curved tusks and thick fur adapted to the cold of the Ice Age; it fed on grasses, shrubs, and woody plants. Climate change and human hunting led to its extinction."
 },
 ];
 
