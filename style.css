@@ -520,7 +520,7 @@ z-index: 5
     background: white;
         color: black;
       text-align: center;
-      padding: 3px 50px 9px 50px;
+      padding: 3px 40px 9px 40px;
       font-size: 3vh;
       border-radius: 20px;
         border: 1px solid lightblue;
@@ -611,6 +611,19 @@ z-index: 5
 }
 
 .langbtn:hover{transform: scale(1.05)}
+
+.thumb-wrap { position: relative; display: inline-block; }
+.medal-badge {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 25px;
+  line-height: 1;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
+  pointer-events: none;
+}
+
+.skip-welcome #welcomeScreen { display: none; }
 
 /* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
 * {

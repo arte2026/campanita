@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -9,7 +9,13 @@
    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
     <title>Juegos Educativos Campanita</title>
-
+<script>
+  try {
+    if (sessionStorage.getItem("welcomeSeen")) {
+      document.documentElement.classList.add("skip-welcome");
+    }
+  } catch (e) {}
+</script>
 </head>
 
 <body>
@@ -17,7 +23,7 @@
 
   <div class="welcome-content" >
 
-    <img src="gallery.jpg" id="enterBtn"  alt="Gallery Entrance">
+    <img src="gallery.jpg" alt="Gallery Entrance">
 
   </div>
 

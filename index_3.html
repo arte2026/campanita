@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -30,6 +30,15 @@
 </head>
 
 <body>
+  <div id="welcomeScreen" class="welcome-screen">
+
+  <div class="welcome-content" >
+
+    <img src="gallery.jpg" id="enterBtn"  alt="Gallery Entrance">
+
+  </div>
+
+</div>
 
   <div class="container">
 
@@ -46,6 +55,7 @@
     <!-- Bottom Buttons -->
     <div class="bottom-buttons">
         <button id="gobackbtn" onclick="goBack()">⨞</button>
+        <button id="gobackbtn" onclick="window.location.reload();">🗘</button>
         <div id="tries">Intentos: 0</div>
         <div class="score">
     Puntaje:  🥇: -26 🥈: -40 🥉: 41+
@@ -129,6 +139,23 @@ const pairs = [
     };
 
 }
+    </script>
+    <script>
+      //WELCOME
+const welcomeScreen = document.getElementById("welcomeScreen");
+const enterBtn = document.getElementById("enterBtn");
+
+enterBtn.addEventListener("click", () => {
+  welcomeScreen.classList.add("fade-out");
+
+  setTimeout(() => {
+    welcomeScreen.style.display = "none";
+  }, 900);
+
+});
+welcomeScreen.addEventListener("click", () => {
+  enterBtn.click();
+});
     </script>
 </body>
 </html>

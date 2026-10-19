@@ -5,7 +5,23 @@ const winSound = new Audio("victory.mp3");
 winSound.preload = "auto"; // ensures it loads before use
 
 const grid = document.getElementById("grid");
+const PROGRESS_KEY = "campanitaProgress";
 
+function gameId() {
+  return location.pathname.split("/").pop() || "index.html";
+}
+
+function saveProgress(tries, medalIcon) {
+  try {
+    const data = JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {};
+    const id = gameId();
+    // keep only the best (fewest tries) result
+    if (!data[id] || tries < data[id].tries) {
+      data[id] = { tries, medal: medalIcon };
+      localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+    }
+  } catch (e) { /* storage blocked: game still works */ }
+}
 let tries = 0;
 let currentAudio = null;
 
@@ -168,6 +184,7 @@ function resetTurn() {
 
 function showWin() {
     const medal = getMedal(tries);
+    saveProgress(tries, medal.icon);
     // Play the win sound
   winSound.currentTime = 0;
   winSound.play();

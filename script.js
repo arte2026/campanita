@@ -198,29 +198,41 @@ const artworks = {
 //Render Thumbnails
 const thumbnailsContainer = document.getElementById("thumbnails");
 
+function getProgress() {
+  try { return JSON.parse(localStorage.getItem("campanitaProgress")) || {}; }
+  catch (e) { return {}; }
+}
+
 function renderThumbnails(list) {
   thumbnailsContainer.innerHTML = "";
+  const progress = getProgress();
 
-  list.forEach((art, index) => {
+  list.forEach((art) => {
+    const wrap = document.createElement("span");
+    wrap.className = "thumb-wrap";
+
     const thumb = document.createElement("img");
     thumb.src = art.img;
     thumb.className = "thumbnail";
-    
+
     thumb.addEventListener("click", () => {
-
-      // 🔹 Remove active from all thumbnails
-      document.querySelectorAll(".thumbnail").forEach(t => {
-        t.classList.remove("active");
-      });
-
-      // 🔹 Add active to clicked one
+      document.querySelectorAll(".thumbnail").forEach(t => t.classList.remove("active"));
       thumb.classList.add("active");
-
-      // 🔹 Load artwork
       loadArtwork(art);
     });
 
-    thumbnailsContainer.appendChild(thumb);
+    wrap.appendChild(thumb);
+
+    const best = progress[art.link];
+    if (best) {
+      const badge = document.createElement("span");
+      badge.className = "medal-badge";
+      badge.textContent = best.medal;
+      badge.title = `Mejor resultado: ${best.tries} intentos`;
+      wrap.appendChild(badge);
+    }
+
+    thumbnailsContainer.appendChild(wrap);
   });
 }
 
@@ -275,18 +287,11 @@ function setupCardFlip() {
 }
 //WELCOME
 const welcomeScreen = document.getElementById("welcomeScreen");
-const enterBtn = document.getElementById("enterBtn");
 
-enterBtn.addEventListener("click", () => {
-  welcomeScreen.classList.add("fade-out");
-
-  setTimeout(() => {
-    welcomeScreen.style.display = "none";
-  }, 900);
-
-});
 welcomeScreen.addEventListener("click", () => {
-  enterBtn.click();
+  try { sessionStorage.setItem("welcomeSeen", "1"); } catch (e) {}
+  welcomeScreen.classList.add("fade-out");
+  setTimeout(() => { welcomeScreen.style.display = "none"; }, 900);
 });
 
 function goBack() {
