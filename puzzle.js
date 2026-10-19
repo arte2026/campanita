@@ -48,25 +48,49 @@ const puzzleImages = [
 },
 ];
 
+const PUZZLE_PROGRESS_KEY = "campanitaPuzzleProgress";
+
+function getPuzzleProgress() {
+  try { return JSON.parse(localStorage.getItem(PUZZLE_PROGRESS_KEY)) || {}; }
+  catch (e) { return {}; }
+}
+
+function savePuzzleProgress(image, moves, medalIcon) {
+  try {
+    const data = getPuzzleProgress();
+    // keep only the best (fewest moves) result
+    if (!data[image] || moves < data[image].moves) {
+      data[image] = { moves, medal: medalIcon };
+      localStorage.setItem(PUZZLE_PROGRESS_KEY, JSON.stringify(data));
+    }
+  } catch (e) { /* storage blocked: game still works */ }
+}
+
 function renderThumbnails() {
   const thumbs = document.getElementById("thumbs");
   thumbs.innerHTML = "";
+  const progress = getPuzzleProgress();
 
-  puzzleImages.forEach((puzzle,index)=>{
+  puzzleImages.forEach((puzzle) => {
+    const wrap = document.createElement("span");
+    wrap.className = "thumb-wrap";
 
     const img = document.createElement("img");
-
     img.src = puzzle.image;
+    img.className = "thumb" + (puzzle.image === currentImage ? " active" : "");
+    img.addEventListener("click", () => selectImage(puzzle, img));
+    wrap.appendChild(img);
 
-    img.className = "thumb";
+    const best = progress[puzzle.image];
+    if (best) {
+      const badge = document.createElement("span");
+      badge.className = "medal-badge";
+      badge.textContent = best.medal;
+      badge.title = `Mejor resultado: ${best.moves} intentos`;
+      wrap.appendChild(badge);
+    }
 
-    img.addEventListener("click",()=>{
-
-        selectImage(puzzle,img);
-
-    });
-
-    thumbs.appendChild(img);
+    thumbs.appendChild(wrap);
   });
 }
 
@@ -243,6 +267,8 @@ function updateMoveCounter() {
 function showWin() {
   gameWon = true;
 const medal = getMedal(moveCount);
+savePuzzleProgress(currentImage, moveCount, medal.icon);
+renderThumbnails();
   const overlay = document.createElement("div");
   overlay.className = "win-overlay";
 
