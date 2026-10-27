@@ -616,14 +616,35 @@ z-index: 5
 .medal-badge {
   position: absolute;
   top: 2px;
-  right: 5px;
-  font-size: 25px;
+  right: 2px;
+  font-size: 30px;
   line-height: 1;
   filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
   pointer-events: none;
 }
 
 .skip-welcome #welcomeScreen { display: none; }
+
+
+.speak-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 33px;
+  height: 33px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+.speak-btn:active { transform: scale(.9); }
+
+/* only show it once the card has been flipped face-up */
+.card:not(.flip) .speak-btn { display: none; }
 
 /* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
 * {

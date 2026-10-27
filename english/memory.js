@@ -1,3 +1,39 @@
+// ---- Text to speech ----
+const LANG_MAP = { en: "en-US" };
+const htmlLang = document.documentElement.lang || "en";
+// "es" / "en" use the defaults above; a full tag like "es-ES" is used as written
+const SPEECH_LANG = htmlLang.includes("-")
+  ? htmlLang
+  : (LANG_MAP[htmlLang.toLowerCase()] || "en-US");
+const canSpeak = "speechSynthesis" in window;
+let voices = [];
+
+function loadVoices() { voices = speechSynthesis.getVoices(); }
+if (canSpeak) {
+  loadVoices();
+  // voices often load asynchronously, especially on Chrome/Android
+  speechSynthesis.addEventListener("voiceschanged", loadVoices);
+  // stop talking if the player leaves the page
+  window.addEventListener("pagehide", () => speechSynthesis.cancel());
+}
+
+function pickVoice() {
+  const base = SPEECH_LANG.split("-")[0];
+  return voices.find(v => v.lang.replace("_", "-") === SPEECH_LANG)
+      || voices.find(v => v.lang.startsWith(base))
+      || null;
+}
+
+function speak(text) {
+  if (!canSpeak) return;
+  speechSynthesis.cancel();               // never queue up overlapping speech
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = SPEECH_LANG;
+  const voice = pickVoice();
+  if (voice) u.voice = voice;
+  u.rate = 0.9;                           // slightly slower, better for learning
+  speechSynthesis.speak(u);
+}
 // Sound Effects
 const matchSound = new Audio('../match.mp3'); // Replace with your file name
 const mismatchSound = new Audio('../error.mp3'); // Replace with your file name
@@ -78,11 +114,24 @@ function init() {
         <div class="back"></div>
       `;
     } else {
-      card.innerHTML = `
-        <div class="front text-card">${item.content}</div>
-        <div class="back"></div>
-      `;
-    }
+  card.innerHTML = `
+    <div class="front text-card">
+      <span class="card-text">${item.content}</span>
+      <button class="speak-btn" aria-label="Escuchar">🔊</button>
+    </div>
+    <div class="back"></div>
+  `;
+
+  const btn = card.querySelector(".speak-btn");
+  if (!canSpeak) {
+    btn.remove();                          // browser has no speech support
+  } else {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();                 // don't trigger the card's click handler
+      speak(item.content);
+    });
+  }
+}
 
     card.addEventListener("click", () => flipCard(card, item));
 
