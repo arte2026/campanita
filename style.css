@@ -10,7 +10,7 @@ align-items: center; /* Vertical centering */
       background: aliceblue;
 	   text-align: center;
     background: radial-gradient(circle, lightblue 10%, transparent 20%),
-    radial-gradient(circle, transparent 10%, aliceblue 20%);
+    radial-gradient(circle, transparent 10%, rgb(139, 198, 250) 20%);
   background-size: 30px 30px; /* Adjust the size of the pattern */
   animation: moveBackground 8s linear infinite; /* Adjust the animation duration and timing function */
 }
@@ -413,7 +413,7 @@ z-index: 5
       
   --s: 100px; /* control the size*/
   --c1: lightgray;
-  --c2: #ffffff;
+  --c2: #ececec;
   
   --_g: #0000 90deg,var(--c1) 0;
   background: 
@@ -624,6 +624,26 @@ z-index: 5
 }
 
 .skip-welcome #welcomeScreen { display: none; }
+
+.speak-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 33px;
+  height: 33px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.35);
+  font-size: 25px;
+  line-height: 1;
+  cursor: pointer;
+}
+.speak-btn:active { transform: scale(.9); }
+
+/* only show it once the card has been flipped face-up */
+.card:not(.flip) .speak-btn { display: none; }
 
 /* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
 * {
