@@ -1,3 +1,40 @@
+// ---- Text to speech ----
+const LANG_MAP = { es: "es-MX"};
+const htmlLang = document.documentElement.lang || "es";
+// "es" / "en" use the defaults above; a full tag like "es-ES" is used as written
+const SPEECH_LANG = htmlLang.includes("-")
+  ? htmlLang
+  : (LANG_MAP[htmlLang.toLowerCase()] || "es-MX");
+const canSpeak = "speechSynthesis" in window;
+let voices = [];
+
+function loadVoices() { voices = speechSynthesis.getVoices(); }
+if (canSpeak) {
+  loadVoices();
+  // voices often load asynchronously, especially on Chrome/Android
+  speechSynthesis.addEventListener("voiceschanged", loadVoices);
+  // stop talking if the player leaves the page
+  window.addEventListener("pagehide", () => speechSynthesis.cancel());
+}
+
+function pickVoice() {
+  const base = SPEECH_LANG.split("-")[0];
+  return voices.find(v => v.lang.replace("_", "-") === SPEECH_LANG)
+      || voices.find(v => v.lang.startsWith(base))
+      || null;
+}
+
+function speak(text) {
+  if (!canSpeak) return;
+  speechSynthesis.cancel();               // never queue up overlapping speech
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = SPEECH_LANG;
+  const voice = pickVoice();
+  if (voice) u.voice = voice;
+  u.rate = 0.9;                           // slightly slower, better for learning
+  speechSynthesis.speak(u);
+}
+
 const moveSound = new Audio('move.mp3');
 let moveCount = 0;
 let gameWon = false;
@@ -266,27 +303,42 @@ function updateMoveCounter() {
 
 function showWin() {
   gameWon = true;
-const medal = getMedal(moveCount);
-savePuzzleProgress(currentImage, moveCount, medal.icon);
-renderThumbnails();
+  const medal = getMedal(moveCount);
+
+  savePuzzleProgress(currentImage, moveCount, medal.icon);
+  renderThumbnails();
+
+  const puzzleData = puzzleImages.find(p => p.image === currentImage);
+  const description = puzzleData ? puzzleData.description : "";
+
   const overlay = document.createElement("div");
   overlay.className = "win-overlay";
 
   overlay.innerHTML = `
     <div>
       <h1>🎉 ¡Completado!</h1>
-<h1>Has ganado una medalla de:</h1>
-<h1><span style="font-size: 80px">${medal.icon}</span></h1>
+      <h1>Has ganado una medalla de:</h1>
+      <h1><span style="font-size: 80px">${medal.icon}</span></h1>
+      <p class="win-desc"></p>
+      <button class="win-speak" aria-label="Escuchar descripción">🔊 Escuchar</button>
       <h3><br><br>*Te invito a instalar la version gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
       <br><br>
       <button onclick="restartPuzzle()">⨞</button>
     </div>
-
-    </div>
   `;
+
+  overlay.querySelector(".win-desc").textContent = description;
+
+  const speakBtn = overlay.querySelector(".win-speak");
+  if (!canSpeak || !description) {
+    speakBtn.remove();
+  } else {
+    speakBtn.addEventListener("click", () => speak(description));
+  }
 
   document.body.appendChild(overlay);
 }
+
 function checkWin() {
   for (let i = 0; i < tiles.length; i++) {
     if (tiles[i] !== i) return false;
