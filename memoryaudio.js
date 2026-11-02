@@ -207,7 +207,9 @@ function showWin() {
 function goBack() {
   window.location.href = "index.html";
 }
-
+function goBack2() {
+  window.location.href = "index_e.html";
+}
 function reloadPage() {
   document.querySelector(".win")?.remove();
 }
