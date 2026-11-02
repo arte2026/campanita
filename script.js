@@ -15,7 +15,7 @@ function loadArtwork(art) {
         <h2>${art.title}</h2>
         <h3>${art.size}</h3>
         <h3>${art.info}</h3>
-        <a href="${art.link}" class="playbtn">Jugar</a>
+        <a href="${art.link}" class="playbtn">▶</a>
       </div>
     </div>
   `;
