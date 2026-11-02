@@ -113,7 +113,7 @@ playBtn.addEventListener("click", function(e){
     grid.appendChild(card);
   });
     tries = 0;
-document.getElementById("tries").textContent = `Intentos: ${tries}`;
+document.getElementById("tries").textContent = `: ${tries}`;
 }
 
 function flipCard(card, item) {
@@ -143,7 +143,7 @@ if (item.type === "audio") {
   secondCard = { card, item };
   lock = true;
 tries++;
-document.getElementById("tries").textContent = `Intentos: ${tries}`;
+document.getElementById("tries").textContent = `: ${tries}`;
   // MATCH if pairId is same
   if (
     firstCard.item.pairId === secondCard.item.pairId &&
@@ -193,10 +193,10 @@ function showWin() {
   win.className = "win";
 
   win.innerHTML = `
-    <h1>🎉 !Completado! 🎊</h1>
-    <h1>Has ganado una medalla de:</h1>
+    <h1 data-i18n="atitle">🎉 !Completado! 🎊</h1>
+    <h1 data-i18n="amedal_title">Has ganado una medalla de:</h1>
 <h1><span style="font-size: 80px">${medal.icon}</span></h1>
-<h3><br><br>*Te invito a instalar la version gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
+<h3 data-i18n="ainvite"><br><br>*Te invito a instalar la version gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
       <br><br>
       <button id="gobackbtn" onclick="reloadPage()">⨞</button>
   `;
@@ -235,3 +235,45 @@ function getMedal(tries) {
     };
 
 }
+
+//traduccion
+const translations = {
+  es: {
+    atitle: "🎉 !Completado! 🎊",
+    amedal_title: 'Has ganado una medalla de:',
+    ainvite: "*Te invito a instalar la version de este juego para Android. <br>Disponible en Google Play Store.",
+    
+  },
+
+  en: {
+    atitle: "🎉 !Completed! 🎊",
+    amedal_title: 'You have won a medal:',
+    ainvite: "*You can also install the version of this game for Android. <br>Available on the Google Play Store.",
+    
+  }
+};
+
+function setLanguage(lang) {
+  currentLang = translations[lang] ? lang : "en";
+  applyTranslations();
+}
+
+function applyTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    el.innerHTML = translations[currentLang][key] || translations.en[key] || "";
+  });
+}
+
+function detectLanguage() {
+  const baseLang = document.documentElement.lang.trim().toLowerCase().split(/[-_]/)[0];
+  return translations[baseLang] ? baseLang : "en";
+}
+
+let currentLang;
+
+function initLanguage() {
+  setLanguage(detectLanguage());
+}
+
+initLanguage();

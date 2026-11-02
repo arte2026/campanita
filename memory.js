@@ -1,26 +1,29 @@
 // ---- Text to speech ----
-const LANG_MAP = { es: "es-MX"};
-const htmlLang = document.documentElement.lang || "es";
-// "es" / "en" use the defaults above; a full tag like "es-ES" is used as written
-const SPEECH_LANG = htmlLang.includes("-")
-  ? htmlLang
-  : (LANG_MAP[htmlLang.toLowerCase()] || "es-MX");
+const LANG_MAP = { es: "es-MX", en: "en-US" };
+const htmlLang = document.documentElement.lang.trim() || "en";
+const normalizedHtmlLang = htmlLang.replace(/_/g, "-");
+const htmlLangBase = normalizedHtmlLang.toLowerCase().split("-")[0];
+const SPEECH_LANG = normalizedHtmlLang.includes("-")
+  ? normalizedHtmlLang
+  : (LANG_MAP[htmlLangBase] || normalizedHtmlLang);
 const canSpeak = "speechSynthesis" in window;
 let voices = [];
 
 function loadVoices() { voices = speechSynthesis.getVoices(); }
 if (canSpeak) {
   loadVoices();
-  // voices often load asynchronously, especially on Chrome/Android
   speechSynthesis.addEventListener("voiceschanged", loadVoices);
-  // stop talking if the player leaves the page
   window.addEventListener("pagehide", () => speechSynthesis.cancel());
 }
 
 function pickVoice() {
-  const base = SPEECH_LANG.split("-")[0];
-  return voices.find(v => v.lang.replace("_", "-") === SPEECH_LANG)
-      || voices.find(v => v.lang.startsWith(base))
+  const normalizedSpeechLang = SPEECH_LANG.toLowerCase();
+  const base = normalizedSpeechLang.split("-")[0];
+  return voices.find(v => v.lang.replace(/_/g, "-").toLowerCase() === normalizedSpeechLang)
+      || voices.find(v => {
+        const voiceLang = v.lang.replace(/_/g, "-").toLowerCase();
+        return voiceLang === base || voiceLang.startsWith(`${base}-`);
+      })
       || null;
 }
 
@@ -139,7 +142,7 @@ function init() {
     grid.appendChild(card);
   });
     tries = 0;
-document.getElementById("tries").textContent = `Intentos: ${tries}`;
+document.getElementById("tries").textContent = `: ${tries}`;
 }
 
 function flipCard(card, item) {
@@ -155,7 +158,7 @@ function flipCard(card, item) {
   secondCard = { card, item };
   lock = true;
 tries++;
-document.getElementById("tries").textContent = `Intentos: ${tries}`;
+document.getElementById("tries").textContent = `: ${tries}`;
   // MATCH if pairId is same
   if (
     firstCard.item.pairId === secondCard.item.pairId &&
@@ -205,20 +208,24 @@ function showWin() {
   win.className = "win";
 
   win.innerHTML = `
-    <h1>🎉 !Completado! 🎊</h1>
-    <h1>Has ganado una medalla de:</h1>
+    <h1 data-i18n="title">🎉 !Completado! 🎊</h1>
+    <h1 data-i18n="medal_title">Has ganado una medalla de:</h1>
 <h1><span style="font-size: 80px">${medal.icon}</span></h1>
-<h3><br><br>*Te invito a instalar la version gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
+<h3 data-i18n="invite"><br><br>*Te invito a instalar la version de este juego para dispositivos Android. <br>Disponible en Google Play Store.</h3>
       <br><br>
       <button id="gobackbtn" onclick="reloadPage()">⨞</button>
 
   `;
 
   document.body.appendChild(win);
+  applyTranslations();
 }
 
 function goBack() {
   window.location.href = "index.html";
+}
+function goBack2() {
+  window.location.href = "index_e.html";
 }
 
 function reloadPage() {
@@ -248,3 +255,46 @@ function getMedal(tries) {
     };
 
 }
+
+
+//traduccion
+const translations = {
+  es: {
+    title: "🎉 !Completado! 🎊",
+    medal_title: 'Has ganado una medalla de:',
+    invite: "*Te invito a instalar la version de este juego para Android. <br>Disponible en Google Play Store.",
+    
+  },
+
+  en: {
+    title: "🎉 !Completed! 🎊",
+    medal_title: 'You have won a medal:',
+    invite: "*You can also install the version of this game for Android. <br>Available on the Google Play Store.",
+    
+  }
+};
+
+function setLanguage(lang) {
+  currentLang = translations[lang] ? lang : "en";
+  applyTranslations();
+}
+
+function applyTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    el.innerHTML = translations[currentLang][key] || translations.en[key] || "";
+  });
+}
+
+function detectLanguage() {
+  const baseLang = document.documentElement.lang.trim().toLowerCase().split(/[-_]/)[0];
+  return translations[baseLang] ? baseLang : "en";
+}
+
+let currentLang;
+
+function initLanguage() {
+  setLanguage(detectLanguage());
+}
+
+initLanguage();
