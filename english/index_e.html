@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Juegos Educativos de Memoria y Rompecabezas">
+  <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
+  <meta name="author" content="Guillermo Rayas Monroy">
+    <link rel="stylesheet" href="../style.css">
+   
+    <title>Educational Games Campanita 🔔</title>
+<script>
+  try {
+    if (sessionStorage.getItem("welcomeSeen")) {
+      document.documentElement.classList.add("skip-welcome");
+    }
+  } catch (e) {}
+</script>
+</head>
+
+<body>
+    <div id="welcomeScreen" class="welcome-screen">
+
+  <div class="welcome-content" >
+
+    <img src="gallery.jpg"  alt="Gallery Entrance">
+
+  </div>
+
+</div>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Educational Games Campanita 🔔</h2>
+    </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer">
+  <div id="viewerContent" class="art-frame">
+    
+  </div>
+</div>
+
+    <!-- Thumbnails -->
+    <div class="thumbnails" >
+        <div id="thumbnails">
+      <div class="thumbnail"></div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+
+  <input type="radio" name="category" id="rock2" value="rock2" checked>
+  <label for="rock2">Geography</label>
+
+  <input type="radio" name="category" id="hollywood2" value="hollywood2">
+  <label for="hollywood2">Science</label>
+
+  <input type="radio" name="category" id="sports2" value="sports2">
+  <label for="sports2">Humanities</label>
+     <button id="aboutBtn">Puzzles</button>   
+</div>
+
+    <!-- Bottom Buttons -->
+
+<footer>
+	<button class="langbtn" onclick="goBack2()">Español</button>
+<p>version 2.5 2026 Guillermo R Monroy - 🌐 gr-monroydev.site</p>
+</footer>
+
+  </div>
+    
+<script type="text/javascript" src="../script.js"></script>
+    <script>
+      // About view
+aboutBtn.addEventListener("click", () => {
+  viewer.innerHTML = `
+    <div class="info-screen">
+	
+    <h1>🧩 🧩 🧩 🧩</h1>
+      <h2>Puzzles</h2>
+      
+      <p>INSTRUCTIONS: Click on the tiles surrounding the empty space to move them and complete the puzzle.</p>
+	  <p>Score:<br>🏅 Excelent: 0-50 Tries<br> 🥈 Normal: 51-99 Tries<br> 🥉 Insufficient: 100 or more Tries</p><br>
+<a class="playbtn" href="index_2e.html">Play</a>
+
+    </div>
+  `;
+});
+
+loadCategory(document.querySelector('input[name="category"]:checked').value);
+</script>
+    
+</body>
+</html>

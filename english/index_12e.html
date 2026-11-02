@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <meta name="description" content="Juegos Educativos de Memoria y Rompecabezas">
+  <meta name="keywords" content="Juegos, Educativo, Memorama, Rompecabezas">
+  <meta name="author" content="Guillermo Rayas Monroy">
+    <link rel="stylesheet" href="style.css">
+    <title>Organs of the Human Body</title>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h2>Organs of the Human Body 🧠</h2>
+    </div>
+
+    <!-- Main Viewer -->
+    <div class="viewer2">
+  <div id="grid" class="grid"></div>
+</div>
+
+    
+    <!-- Bottom Buttons -->
+    <div class="bottom-buttons">
+        <button id="gobackbtn" onclick="goBack2()">⨞</button>
+        <button id="gobackbtn" onclick="window.location.reload();">🗘</button>
+       <div class="score">Tries<span id="tries">0</span></div>
+        <div class="score">
+      Score:  🥇: -17 🥈: -25 🥉: 26+
+          </div>
+</div>
+  </div>
+    <script>
+     // QUESTION → ANSWER PAIRS
+const pairs = [
+  {
+    question: "cards2b1.jpg",
+    answer: "Intestines"
+  },
+  {
+    question: "cards2b2.jpg",
+    answer: "Brain"
+  },
+  {
+    question: "cards2b3.jpg",
+    answer: "Lungs"
+  },
+  {
+    question: "cards2b6.jpg",
+    answer: "Stomach"
+  },
+  {
+    question: "cards2b4.jpg",
+    answer: "Heart"
+  },
+    {
+    question: "cards2b5.jpg",
+    answer: "Eyes"
+  },
+    {
+    question: "cards2b7.jpg",
+    answer: "Liver"
+  },
+    {
+    question: "cards2b8.jpg",
+    answer: "Kidneys"
+  },
+     {
+    question: "cards2b9.jpg",
+    answer: "Bladder"
+  },
+    
+];
+    </script>
+    <script type="text/javascript" src="../memory.js"></script>
+    <script>
+    function getMedal(tries) {
+
+    if (tries <= 17) {
+        return {
+            icon: "🥇",
+        };
+    }
+
+    if (tries <= 25) {
+        return {
+            icon: "🥈",
+            
+        };
+    }
+
+    return {
+        icon: "🥉",
+        
+    };
+
+}
+    </script>
+</body>
+</html>
