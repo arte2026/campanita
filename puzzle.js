@@ -372,7 +372,7 @@ function showWin() {
   renderThumbnails();
 
   const puzzleData = puzzleImages.find(p => p.image === currentImage);
-  const description = puzzleData ? getDescription(puzzleData) : "";
+  const description = puzzleData ? puzzleData.description : "";
 
   const overlay = document.createElement("div");
   overlay.className = "win-overlay";
@@ -390,7 +390,7 @@ function showWin() {
     </div>
   `;
 
-  overlay.querySelector(".win-desc").textContent = description;
+  overlay.querySelector(".win-desc").textContent = getDescription(puzzleData);
 
   const speakBtn = overlay.querySelector(".win-speak");
   if (!canSpeak || !description) {
