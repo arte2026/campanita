@@ -219,21 +219,21 @@ const artworks = {
     {
       img: "geo1.jpg",
       title: "Capitals of the  Americas - 24 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_3e.html",
         info: "Flip over the cards of the countries of the Americas and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 26 Tries  🥈 Normal: - 40 Tries  🥉 Insufficient: 41 + Tries"
     },
     {
       img: "geo2.jpg",
       title: "Capitals of Europe and Africa - 24 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_4e.html",
         info: "Flip over the cards of the countries of Europe and Africa and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 26 Tries  🥈 Normal: - 40 Tries  🥉 Insufficient: 41 + Tries"
     },
       {
       img: "geo3.jpg",
       title: "Capitals of  Asia and Oceania - 22 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_5e.html",
         info: "Flip over the cards of the countries of Asia and Oceania and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 23 Tries  🥈 Normal: - 35 Tries  🥉 Insufficient: 36 + Tries"
     },
@@ -241,7 +241,7 @@ const artworks = {
       {
       img: "geo11.jpg",
       title: "Capitals of Mexico #1 - 22 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_6e.html",
         info: "Flip over the cards of the states of Mexico and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 23 Tries  🥈 Normal: - 35 Tries  🥉 Insufficient: 36 + Tries"
     },
@@ -249,21 +249,28 @@ const artworks = {
       {
       img: "geo12.jpg",
       title: "Capitals of Mexico #2 - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_7e.html",
         info: "Flip over the cards of the states of Mexico and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "geo13.jpg",
       title: "Capitals of Mexico #3 - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_8e.html",
         info: "Flip over the cards of the states of Mexico and match them with the cards of their respective capitals.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
+    },
+    {
+      img: "geo20e.jpg",
+      title: "Natural Wonders of the World - 20 Cards",
+      size: "HOW TO PLAY:",
+      link: "index_10e.html",
+        info: "Flip over the cards of the Natural Wonders of the World and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -20 Tries 🥈 Normal: -30 Tries 🥉 Insufficient: 31 + Tries"
     },
       {
       img: "geo21.jpg",
       title: "Biomes and Climate - 16 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_9e.html",
         info: "Flip over the cards of the Biomes of the World and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries 🥈 Normal: -21 Tries 🥉 Insufficient: 22 + Tries"
     },
@@ -273,7 +280,7 @@ const artworks = {
     {
       img: "ana1.jpg",
       title: "Planets of the Solar System- 16 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_11e.html",
         info: "Flip over the cards of the Planets of the Solar System and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries  🥈 Normal: -21 Tries 🥉 Insufficient: 22 + Tries"
     },
@@ -281,37 +288,44 @@ const artworks = {
     {
       img: "anat3.jpg",
       title: " Quimical Elements - 22 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_13e.html",
         info: "Flip over the cards of the Quimical Elements and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 23 Tries  🥈 Normal: - 35 Tries  🥉 Insufficient: 36 + Tries"
     },
       {
       img: "ana4.jpg",
       title: "Organs of the Human Body - 18 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_12e.html",
         info: "Flip over the cards of the Organs of the Human Body and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -17 Tries 🥈 Normal: -25 Tries 🥉 Insufficient: 26 + Tries"
     },
       {
       img: "ana2.jpg",
       title: "Animal Kingdom - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_14e.html",
         info: "Flip over the cards of the Animal Kingdom species and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "ana5.jpg",
       title: "Physical Quantities - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_15e.html",
         info: "Flip over the cards of the Physical Quantities and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
        {
       img: "anat6.jpg",
       title: " Geometric Figures 3D - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_16e.html",
         info: "Flip over the cards of the Geometric Figures  3D and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
+    },
+    {
+      img: "ana7e.jpg",
+      title: " Wonders of the Universe - 20 Cards",
+      size: "HOW TO PLAY:",
+      link: "index_17e.html",
+        info: "Flip over the cards of the Wonders of the Universe and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
   ],
 
@@ -319,51 +333,58 @@ const artworks = {
     {
       img: "hum1.jpg",
       title: "Universal History - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_21e.html",
         info: "Flip over the cards of the Universal History Figures and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
      {
       img: "hum4.jpg",
       title: "History of Mexico - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_22e.html",
         info: "Flip over the cards of the History of Mexico Figures and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "hum3.jpg",
       title: " Tecnological Advances - 16 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_23e.html",
         info: "Flip over the cards of the Tecnological Advances  and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries 🥈 Normal: -21 Tries 🥉 Insufficient: 22 + Tries"
     },
      {
       img: "hum2.jpg",
       title: " Historical Monuments  - 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_24e.html",
         info: "Flip over the cards of the Historical Monuments and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
 	{
       img: "hum5.jpg",
       title: "Fine Arts  - 16 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_25e.html",
         info: "Flip over the cards of the Fine Arts and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: -14 Tries-🥈 Normal: -21 Tries 🥉 Insufficient: 22 + Tries"
     },
 	{
       img: "hum6.jpg",
       title: "Traditional Costumes- 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_26e.html",
         info: "Flip over the cards of the Traditional Costumes and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
       {
       img: "hum7.jpg",
       title: " Musical Instruments- 20 Cards",
-      size: "INSTRUCTIONS:",
+      size: "HOW TO PLAY:",
       link: "index_27e.html",
         info: "Flip over the cards of the sounds of Musical Instruments and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
+    },
+    {
+      img: "hum8e.jpg",
+      title: "Dishes of the World- 20 Cards",
+      size: "HOW TO PLAY:",
+      link: "index_28e.html",
+        info: "Flip over the cards of Dishes of the World and match them with the cards of their respective names.<br><br>Score:<br><br>🏅 Excelent: - 20 Tries  🥈 Normal: - 30 Tries  🥉 Insufficient: 31 + Tries"
     },
   ],
 };
