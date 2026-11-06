@@ -31,7 +31,7 @@ aboutBtn.addEventListener("click", () => {
     <h1>🧩 🧩 🧩 🧩</h1>
       <h2>Rompecabezas</h2>
       
-      <p>INSTRUCCIONES: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
+      <p>COMO JUGAR: Haz clic en las piezas alrededor de la pieza vacía para moverlas y completar el rompecabezas.</p>
 	  <p>Puntuacion:<br>🏅 Excelente: 0-50 Intentos<br> 🥈 Normal: 51-99 Intentos<br> 🥉 Insuficiente: 100 o mas Intentos</p><br>
 <a class="playbtn" href="index_2.html">Jugar</a>
 
@@ -45,21 +45,21 @@ const artworks = {
     {
       img: "geo1.jpg",
       title: "Capitales de America - 24 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_3.html",
         info: "Voltea las cartas de los paises de America y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 26 Intentos  🥈 Normal: - 40 Intentos  🥉 Insuficiente: 41 + Intentos"
     },
     {
       img: "geo2.jpg",
       title: "Capitales de Europa y Africa - 24 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_4.html",
         info: "Voltea las cartas de los paises de Europa y Africa y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 26 Intentos  🥈 Normal: - 40 Intentos  🥉 Insuficiente: 41 + Intentos"
     },
       {
       img: "geo3.jpg",
       title: "Capitales de Asia y Oceania - 22 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_5.html",
         info: "Voltea las cartas de los paises de Asia y Oceania y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
     },
@@ -67,7 +67,7 @@ const artworks = {
       {
       img: "geo11.jpg",
       title: "Capitales de Mexico #1 - 22 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_6.html",
         info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
     },
@@ -75,21 +75,28 @@ const artworks = {
       {
       img: "geo12.jpg",
       title: "Capitales de Mexico #2 - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_7.html",
         info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "geo13.jpg",
       title: "Capitales de Mexico #3 - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_8.html",
         info: "Voltea las cartas de los estados de Mexico y emparejalas con las cartas de sus respectivas capitales.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+    },
+    {
+      img: "geo20.jpg",
+      title: "Maravillas Naturales del Mundo - 20 Cartas",
+      size: "COMO JUGAR:",
+      link: "index_10.html",
+        info: "Voltea las cartas de las Maravillas Naturales del mundo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -20 Intentos 🥈 Normal: -30 Intentos 🥉 Insuficiente: 31 o mas Intentos"
     },
       {
       img: "geo21.jpg",
       title: "Biomas y Climas - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_9.html",
         info: "Voltea las cartas de los Biomas y Climas del mundo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos 🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
@@ -100,7 +107,7 @@ const artworks = {
     {
       img: "ana1.jpg",
       title: "Planetas del Sistema Solar - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_11.html",
         info: "Voltea las cartas de los Planetas del Sistema Solar y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos  🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
@@ -108,37 +115,44 @@ const artworks = {
     {
       img: "anat3.jpg",
       title: "Elementos Quimicos - 22 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_13.html",
         info: "Voltea las cartas de los Elementos Quimicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 23 Intentos  🥈 Normal: - 35 Intentos  🥉 Insuficiente: 36 + Intentos"
     },
       {
       img: "ana4.jpg",
       title: "Organos del Cuerpo Humano - 18 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_12.html",
         info: "Voltea las cartas de los Organos del Cuerpo Humano y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -17 Intentos 🥈 Normal: -25 Intentos 🥉 Insuficiente: 26 o mas Intentos"
     },
       {
       img: "ana2.jpg",
       title: "Reino Animal  - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_14.html",
         info: "Voltea las cartas de las especies del Reino Animal y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "ana5.jpg",
       title: "Magnitudes Fisicas - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_15.html",
         info: "Voltea las cartas de las Magnitudes Fisicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
        {
       img: "anat6.jpg",
       title: "Figuras Geometricas 3D - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_16.html",
         info: "Voltea las cartas de las Figuras Geometricas 3D y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+    },
+     {
+      img: "ana7.jpg",
+      title: "Maravillas del Universo",
+      size: "COMO JUGAR:",
+      link: "index_17.html",
+        info: "Voltea las cartas de las Maravillas del Universo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
   ],
 
@@ -146,51 +160,59 @@ const artworks = {
     {
       img: "hum1.jpg",
       title: "Figuras Historicas - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_21.html",
         info: "Voltea las cartas de las Figuras Historicas y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
      {
       img: "hum4.jpg",
       title: "Figuras Historicas de Mexico - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_22.html",
         info: "Voltea las cartas de las figuras historicas de Mexico y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "hum3.jpg",
       title: "Avances Tecnologicos - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_23.html",
         info: "Voltea las cartas de los Avances Tecnologicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos 🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
      {
       img: "hum2.jpg",
       title: "Monumentos Historicos  - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_24.html",
         info: "Voltea las cartas de los Monumentos Historicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
 	{
       img: "hum5.jpg",
       title: "Bellas Artes  - 16 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_25.html",
         info: "Voltea las cartas de las Bellas Artes y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: -14 Intentos-🥈 Normal: -21 Intentos 🥉 Insuficiente: 22 o mas Intentos"
     },
 	{
       img: "hum6.jpg",
       title: "Trajes Tipicos - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_26.html",
         info: "Voltea las cartas de los Trajes Tipicos y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
       {
       img: "hum7.jpg",
       title: "Instrumentos Musicales - 20 Cartas",
-      size: "INSTRUCCIONES:",
+      size: "COMO JUGAR:",
       link: "index_27.html",
         info: "Voltea las cartas de los Instrumentos Musicales y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
+    },
+    
+    {
+      img: "hum8.jpg",
+      title: "Platos del Mundo - 20 Cartas",
+      size: "COMO JUGAR:",
+      link: "index_28.html",
+        info: "Voltea las cartas de los Platos del Mundo y emparejalas con las cartas de sus respectivos nombres.<br><br>Puntuacion:<br><br>🏅 Excelente: - 20 Intentos  🥈 Normal: - 30 Intentos  🥉 Insuficiente: 31 + Intentos"
     },
   ],
   rock2: [
