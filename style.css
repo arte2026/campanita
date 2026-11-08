@@ -599,6 +599,24 @@ z-index: 5
 
 .langbtn:hover{transform: scale(1.05)}
 
+.player-buttons {
+  display: inline-flex;
+  gap: 6px;
+  margin-right: 10px;
+}
+
+.player-btn {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #543d5b;
+  border-radius: 10px
+}
+
+.player-btn[aria-pressed="true"] {
+
+  outline: 2px solid gold;
+}
+
 .thumb-wrap { position: relative; display: inline-block; }
 .medal-badge {
   position: absolute;

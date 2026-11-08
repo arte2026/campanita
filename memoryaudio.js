@@ -6,6 +6,14 @@ winSound.preload = "auto"; // ensures it loads before use
 
 const grid = document.getElementById("grid");
 const PROGRESS_KEY = "campanitaProgress";
+const ACTIVE_PLAYER_KEY = "campanitaActivePlayer";
+
+function getProgressStorageKey() {
+  const player = localStorage.getItem(ACTIVE_PLAYER_KEY);
+  return player === "2" || player === "3"
+    ? `${PROGRESS_KEY}:player-${player}`
+    : PROGRESS_KEY;
+}
 
 function gameId() {
   return location.pathname.split("/").pop() || "index.html";
@@ -13,12 +21,13 @@ function gameId() {
 
 function saveProgress(tries, medalIcon) {
   try {
-    const data = JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {};
+    const storageKey = getProgressStorageKey();
+    const data = JSON.parse(localStorage.getItem(storageKey)) || {};
     const id = gameId();
     // keep only the best (fewest tries) result
     if (!data[id] || tries < data[id].tries) {
       data[id] = { tries, medal: medalIcon };
-      localStorage.setItem(PROGRESS_KEY, JSON.stringify(data));
+      localStorage.setItem(storageKey, JSON.stringify(data));
     }
   } catch (e) { /* storage blocked: game still works */ }
 }

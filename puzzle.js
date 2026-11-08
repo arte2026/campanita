@@ -3,44 +3,10 @@ const LANG_MAP = { es: "es-MX", en: "en-US" };
 const htmlLang = document.documentElement.lang.trim() || "es";
 const normalizedHtmlLang = htmlLang.replace(/_/g, "-");
 const pageLanguage = normalizedHtmlLang.toLowerCase().split("-")[0];
-const SPEECH_LANG = normalizedHtmlLang.includes("-")
-  ? normalizedHtmlLang
-  : (LANG_MAP[pageLanguage] || normalizedHtmlLang);
-const canSpeak = "speechSynthesis" in window;
-let voices = [];
-
-function loadVoices() { voices = speechSynthesis.getVoices(); }
-if (canSpeak) {
-  loadVoices();
-  // voices often load asynchronously, especially on Chrome/Android
-  speechSynthesis.addEventListener("voiceschanged", loadVoices);
-  // stop talking if the player leaves the page
-  window.addEventListener("pagehide", () => speechSynthesis.cancel());
-}
-
-function pickVoice() {
-  const normalizedSpeechLang = SPEECH_LANG.toLowerCase();
-  const base = normalizedSpeechLang.split("-")[0];
-  return voices.find(v => v.lang.replace(/_/g, "-").toLowerCase() === normalizedSpeechLang)
-      || voices.find(v => {
-        const voiceLang = v.lang.replace(/_/g, "-").toLowerCase();
-        return voiceLang === base || voiceLang.startsWith(`${base}-`);
-      })
-      || null;
-}
-
-function speak(text) {
-  if (!canSpeak) return;
-  speechSynthesis.cancel();               // never queue up overlapping speech
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = SPEECH_LANG;
-  const voice = pickVoice();
-  if (voice) u.voice = voice;
-  u.rate = 0.9;                           // slightly slower, better for learning
-  speechSynthesis.speak(u);
-}
 
 const moveSound = new Audio('move.mp3');
+const winSound = new Audio(new URL("victory.mp3", document.currentScript.src).href);
+winSound.preload = "auto"; // ensures it loads before use
 let moveCount = 0;
 let gameWon = false;
 
@@ -50,17 +16,13 @@ const puzzleText = {
     bestResult: moves => `Mejor resultado: ${moves} intentos`,
     title: "🎉 ¡Completado!",
     medalTitle: "Has ganado una medalla de:",
-    listen: "🔊 Escuchar",
-    listenDescription: "Escuchar descripción",
-    invite: "*Te invito a instalar la versión gratuita de este juego para dispositivos Android. <br>Disponible en Google Play Store."
+    
   },
   en: {
     bestResult: moves => `Best result: ${moves} moves`,
     title: "🎉 Completed!",
     medalTitle: "You have won a medal:",
-    listen: "🔊 Listen",
-    listenDescription: "Listen to description",
-    invite: "*You can also install the free version of this game for Android devices. <br>Available on the Google Play Store."
+    
   }
 };
 const pageText = puzzleText[pageLanguage] || puzzleText.en;
@@ -70,19 +32,28 @@ function getDescription(puzzleData) {
 }
 
 const PUZZLE_PROGRESS_KEY = "campanitaPuzzleProgress";
+const ACTIVE_PLAYER_KEY = "campanitaActivePlayer";
+
+function getPuzzleProgressStorageKey() {
+  const player = localStorage.getItem(ACTIVE_PLAYER_KEY);
+  return player === "2" || player === "3"
+    ? `${PUZZLE_PROGRESS_KEY}:player-${player}`
+    : PUZZLE_PROGRESS_KEY;
+}
 
 function getPuzzleProgress() {
-  try { return JSON.parse(localStorage.getItem(PUZZLE_PROGRESS_KEY)) || {}; }
+  try { return JSON.parse(localStorage.getItem(getPuzzleProgressStorageKey())) || {}; }
   catch (e) { return {}; }
 }
 
 function savePuzzleProgress(image, moves, medalIcon) {
   try {
     const data = getPuzzleProgress();
+    const storageKey = getPuzzleProgressStorageKey();
     // keep only the best (fewest moves) result
     if (!data[image] || moves < data[image].moves) {
       data[image] = { moves, medal: medalIcon };
-      localStorage.setItem(PUZZLE_PROGRESS_KEY, JSON.stringify(data));
+      localStorage.setItem(storageKey, JSON.stringify(data));
     }
   } catch (e) { /* storage blocked: game still works */ }
 }
@@ -232,7 +203,6 @@ function render() {
     }
 
     tile.onclick = () => move(index);
-moveSound.play();
     puzzle.appendChild(tile);
   });
 }
@@ -260,7 +230,12 @@ function move(index) {
   render();
 
   if (checkWin()) {
+    moveSound.pause();
+    moveSound.currentTime = 0;
     setTimeout(showWin, 200);
+  } else {
+    moveSound.currentTime = 0;
+    moveSound.play();
   }
 }
 }
@@ -292,12 +267,16 @@ function updateMoveCounter() {
 function showWin() {
   gameWon = true;
   const medal = getMedal(moveCount);
+  moveSound.pause();
+  moveSound.currentTime = 0;
+  winSound.currentTime = 0;
+  winSound.play();
 
   savePuzzleProgress(currentImage, moveCount, medal.icon);
   renderThumbnails();
 
   const puzzleData = puzzleImages.find(p => p.image === currentImage);
-  const description = puzzleData ? puzzleData.description : "";
+  
 
   const overlay = document.createElement("div");
   overlay.className = "win-overlay";
@@ -306,23 +285,16 @@ function showWin() {
     <div>
       <h1>${pageText.title}</h1>
       <h1>${pageText.medalTitle}</h1>
-      <h1><span style="font-size: 80px">${medal.icon}</span></h1>
+      <h1><span style="font-size: 80px">${medal.icon}</span></h1><br>
       <p class="win-desc"></p>
-      <button class="win-speak" aria-label="${pageText.listenDescription}">${pageText.listen}</button>
-      <h3><br><br>${pageText.invite}</h3>
-      <br><br>
+      
+      <br>
       <button onclick="restartPuzzle()">⨞</button>
     </div>
   `;
 
   overlay.querySelector(".win-desc").textContent = getDescription(puzzleData);
 
-  const speakBtn = overlay.querySelector(".win-speak");
-  if (!canSpeak || !description) {
-    speakBtn.remove();
-  } else {
-    speakBtn.addEventListener("click", () => speak(description));
-  }
 
   document.body.appendChild(overlay);
 }
